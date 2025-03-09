@@ -27,12 +27,11 @@ nav a {
   text-decoration: none;
   color: #000;
   cursor: pointer; /* Pointer cursor on hover */
-  transition: border-bottom 0.3s ease, transform 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 nav a:hover {
-  border-bottom: black solid 1px;
-  transform: scale(1.04);
+  font-weight: 600;
 }
 
 .social-link {
