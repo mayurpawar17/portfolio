@@ -1,4 +1,7 @@
 import React from "react";
+import '../assets/styles/project.css'
+import ProjectCard from "./ProjectCard";
+
 
 const Projects = () => {
   const projects = [
@@ -17,18 +20,18 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects">
-      <h2>Projects</h2>
-      <div>
-        {projects.map((project) => (
-          <div key={project.id}>
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <a href={project.link}>View Project</a>
-          </div>
-        ))}
+   <>
+    <div className="main">
+      <h1 className="text-3xl font-bold projectTitle">Projects</h1>
+
+      <div className="projectCardContainer">
+    <ProjectCard/>
+    <ProjectCard/>
+    <ProjectCard/>
+
       </div>
-    </section>
+    </div>
+   </>
   );
 };
 

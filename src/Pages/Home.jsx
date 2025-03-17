@@ -10,6 +10,7 @@ const Home = () => {
         <main>
 
         <p className='tagline'>Design. Develop. Deploy</p>
+        <button className='knowMoreBtn'>Know more</button>
 
         </main>
         

@@ -1,5 +1,7 @@
 import React from "react";
 import "../assets/styles/header.css";
+import "tailwindcss";
+import MobileMenu from "./MobileMenu ";
 
 const Header = () => {
   return (
@@ -11,19 +13,24 @@ const Header = () => {
         <a href="/projects">Projects</a>
         <a href="/skills">Skills</a>
         <a href="/about">About</a>
-        <a href="/contact">Contact</a>
+        <MobileMenu />
+        {/* <a href="/contact">Contact</a> */}
       </nav>
 
       <div className="social-link">
-        <img
-          className="linked"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-        />
+        <a href="https://www.linkedin.com/in/mayurpawar17/">
+          <img
+            className="linked"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+          />
+        </a>
 
-        <img
-          className="github"
-          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-        />
+        <a href="https://github.com/mayurpawar17">
+          <img
+            className="github"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+          />
+        </a>
       </div>
     </header>
   );
