@@ -1,4 +1,4 @@
-.projectTitle{
+/* .projectTitle{
     text-align: center;
 }
 .main{
@@ -10,4 +10,60 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 1%;
-}
+    flex-wrap: wrap;
+} */
+
+
+.projectTitle {
+    text-align: center;
+    font-size: 2.5rem; /* Default font size for desktop */
+    margin-bottom: 20px;
+  }
+  
+  .main {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .projectCardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center cards horizontally */
+    padding: 1%;
+    flex-wrap: wrap;
+    gap: 20px; /* Add gap between cards */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    /* Tablet Styles */
+    .projectTitle {
+      font-size: 2rem; /* Slightly smaller font size for tablets */
+    }
+  
+    .projectCardContainer {
+      gap: 15px; /* Reduce gap between cards */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Mobile Styles */
+    .projectTitle {
+      font-size: 1.75rem; /* Smaller font size for mobile */
+    }
+  
+    .projectCardContainer {
+      gap: 10px; /* Further reduce gap between cards */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Small Mobile Styles */
+    .projectTitle {
+      font-size: 1.5rem; /* Even smaller font size for very small screens */
+    }
+  
+    .projectCardContainer {
+      gap: 5px; /* Minimal gap between cards */
+    }
+  }

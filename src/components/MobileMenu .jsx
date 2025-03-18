@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "../assets/styles/Menu.css"; // Import your CSS file for styling
 
 
-const MobileMenu = () => {
+const 
+MobileMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {

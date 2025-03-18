@@ -1,11 +1,10 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1%;
   font-family: Work Sans;
-  /* border: red solid 1px; */
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 
@@ -21,13 +20,13 @@ nav {
   display: flex;
   gap: 50px;
   background-color: #fafafa;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   padding: 10px 40px;
   border-radius: 16px;
 }
 nav a {
   text-decoration: none;
-  cursor: pointer; /* Pointer cursor on hover */
+  cursor: pointer; 
   transition: all 0.5s ease;
 }
 
@@ -44,4 +43,88 @@ nav a:hover {
 .github {
   width: 20px;
   height: 30px;
+} */
+
+
+@import "tailwindcss";
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  font-family: "Work Sans", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: flex;
+  gap: 50px;
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  padding: 10px 40px;
+  border-radius: 16px;
+}
+
+.desktop-nav a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.desktop-nav a:hover {
+  font-weight: 500;
+}
+
+/* Mobile Menu Toggle Button */
+.mobile-menu-toggle {
+  display: none; /* Hidden by default */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Social Links */
+.social-link {
+  display: flex;
+  gap: 10px;
+  padding: 5px 10px;
+}
+
+.linked,
+.github {
+  width: 20px;
+  height: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none; /* Hide desktop nav on mobile */
+  }
+
+  .mobile-menu-toggle {
+    display: block; /* Show mobile menu toggle button */
+  }
+
+  .social-link {
+    display: none; /* Hide social links on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu-toggle {
+    display: none; /* Hide mobile menu toggle on desktop */
+  }
 }

@@ -1,4 +1,4 @@
-
+/* 
 main{
     width: 100%;
     display: flex;
@@ -18,4 +18,78 @@ main{
     padding: 1vh 2vh;
     border-radius: 8px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
+} */
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    text-align: center; /* Center text for smaller screens */
+
+    gap: 80px;
+  }
+  
+  .tagline {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 64px;
+    margin: 0 20px; /* Add margin for smaller screens */
+  }
+  
+  .knowMoreBtn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Use fixed padding for better control */
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .knowMoreBtn:hover {
+    background-color: #696868; /* Darken button on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    /* Tablet Styles */
+    .tagline {
+      font-size: 48px; /* Slightly smaller font size for tablets */
+    }
+  
+    .knowMoreBtn {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Mobile Styles */
+    .tagline {
+      font-size: 36px; /* Smaller font size for mobile */
+      margin: 0 10px; /* Reduce margin for smaller screens */
+    }
+  
+    .knowMoreBtn {
+      padding: 8px 16px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Small Mobile Styles */
+    .tagline {
+      font-size: 28px; /* Even smaller font size for very small screens */
+    }
+  
+    .knowMoreBtn {
+      padding: 6px 12px;
+      font-size: 10px;
+      
+    }
+  }
