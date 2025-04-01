@@ -1,7 +1,6 @@
 import React from "react";
-import '../assets/styles/project.css'
+import "../assets/styles/project.css";
 import ProjectCard from "./ProjectCard";
-
 
 // const Projects = () => {
 //   const projects = [
@@ -37,8 +36,6 @@ import ProjectCard from "./ProjectCard";
 
 // export default Projects;
 
-
-
 const Projects = () => {
   const projects = [
     {
@@ -63,7 +60,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="main">
+      <div className="projectContainer">
         <h1 className="projectTitle">Projects</h1>
 
         <div className="projectCardContainer">

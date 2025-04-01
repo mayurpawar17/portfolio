@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* .projectCard {
   width: 25vw;
 
@@ -71,23 +73,23 @@ button {
   align-items: center;
 }
 
-.projectTitle {
-  font-size: 1.25rem; /* Default font size for desktop */
+.projectCardTitle {
+  font-size: 1.0rem; /* Default font size for desktop */
   font-weight: 500;
 }
 
-.viewBtn {
+/* .viewBtn {
   padding: 8px 20px;
   border: 1px solid #d4d4d4;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.5s ease;
   font-size: 14px;
-}
+} */
 
-.viewBtn:hover {
-  background-color: #f0f0f0; /* Light background on hover */
-}
+/* .viewBtn:hover {
+  background-color: #f0f0f0; 
+} */
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
@@ -96,14 +98,14 @@ button {
     width: 40vw; /* Wider cards for tablets */
   }
 
-  .projectTitle {
+  .projectCardTitle {
     font-size: 1.1rem; /* Slightly smaller font size */
   }
 
-  .viewBtn {
+  /* .viewBtn {
     padding: 6px 16px;
     font-size: 12px;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
@@ -113,14 +115,14 @@ button {
     margin: 10px auto; /* Center the card */
   }
 
-  .projectTitle {
+  .projectCardTitle {
     font-size: 1rem; /* Smaller font size for mobile */
   }
 
-  .viewBtn {
+  /* .viewBtn {
     padding: 5px 14px;
     font-size: 12px;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
@@ -129,12 +131,12 @@ button {
     width: 90vw; /* Slightly smaller width for very small screens */
   }
 
-  .projectTitle {
+  .projectCardTitle {
     font-size: 0.9rem; /* Even smaller font size */
   }
-
+/* 
   .viewBtn {
     padding: 4px 12px;
     font-size: 10px;
-  }
+  } */
 }

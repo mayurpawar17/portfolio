@@ -1,6 +1,6 @@
 // import React from "react";
 // import "../assets/styles/header.css";
- import "tailwindcss";
+import "tailwindcss";
 // import MobileMenu from "./MobileMenu ";
 
 // const Header = () => {
@@ -38,13 +38,17 @@
 
 // export default Header;
 
-
 import React, { useState } from "react";
 import "../assets/styles/header.css";
 import MobileMenu from "../components/MobileMenu ";
+import { Icon } from "@iconify/react";
 
-const Header = () => {
+const Header = ({ setLoading }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleNavigation = () => {
+    setLoading(true);
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -52,12 +56,14 @@ const Header = () => {
 
   return (
     <header className="header">
-      <p className="logo">Mayur.</p>
+      <Icon icon="mynaui:letter-m-square" width="48" height="48"  style={{color: "#000"}}/>
 
       {/* Desktop Navigation */}
       <nav className="desktop-nav">
         <a href="/">Home</a>
-        <a href="/projects">Projects</a>
+        <a href="/projects" onClick={handleNavigation}>
+          Projects
+        </a>
         <a href="/skills">Skills</a>
         <a href="/about">About</a>
       </nav>
@@ -75,20 +81,32 @@ const Header = () => {
       {/* Social Links */}
       <div className="social-link">
         <a href="https://www.linkedin.com/in/mayurpawar17/">
-          <img
-            className="linked"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-            alt="LinkedIn"
+          <Icon
+            icon="mdi:linkedin"
+            width="24"
+            height="24"
+            style={{ color: "#000" }}
           />
         </a>
 
         <a href="https://github.com/mayurpawar17">
-          <img
-            className="github"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-            alt="GitHub"
+          <Icon
+            icon="mdi:github"
+            width="24"
+            height="24"
+            style={{ color: "#000" }}
           />
         </a>
+
+        <div className="flex cursor-pointer">
+          <Icon
+            icon="lets-icons:sun-light"
+            width="24"
+            height="24"
+            style={{ color: "#00000" }}
+          />
+          <span>Light</span>
+        </div>
       </div>
     </header>
   );

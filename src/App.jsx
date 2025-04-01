@@ -7,13 +7,13 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
 import Home from "./Pages/Home";
-import { Routes,Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-    <Header/>
-    <Routes>
+      <Header />
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
