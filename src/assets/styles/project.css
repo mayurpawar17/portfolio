@@ -1,74 +1,76 @@
-/* .projectTitle{
-    text-align: center;
-}
-.main{
-    width: 100%;
-    margin-top: 20px;
-}
-.projectCardContainer{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1%;
-    flex-wrap: wrap;
-} */
-
-
 .projectTitle {
-  font-size: 32px;
-    font-weight: bold;
-  }
+  font-size: clamp(1.5rem, 5vw, 2rem); /* Responsive font size (24px-32px) */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0 1rem; /* Prevent edge touching on mobile */
+}
 
+.projectContainer {
+  min-height: 100vh; /* Changed from height to min-height */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; /* Better vertical centering */
+  gap: clamp(1.5rem, 5vw, 3.125rem); /* Responsive gap (24px-50px) */
+  padding: 2rem 1rem; /* Responsive padding */
+  box-sizing: border-box;
+}
 
-  
+.projectCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 1.25rem); /* Responsive gap (16px-20px) */
+  width: 100%;
+  max-width: 1400px; /* Prevent over-stretching on large screens */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Optional: Add these styles for your project cards */
+.projectCard {
+  flex: 1 1 300px; /* Flexible basis with minimum 300px */
+  max-width: 400px; /* Maximum card width */
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+}
+
+.projectCard img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.projectCardContent {
+  padding: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
   .projectContainer {
-    margin-top: 20px;
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    padding: 2rem;
   }
   
+  .projectCard {
+    flex: 1 1 350px; /* Slightly larger cards on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
   .projectCardContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center cards horizontally */
-    padding: 1%;
-    flex-wrap: wrap;
-    gap: 20px; /* Add gap between cards */
+    gap: 1.5rem; /* Slightly larger gap on desktop */
   }
   
-  /* Responsive Styles */
-  @media (max-width: 1024px) {
-    /* Tablet Styles */
-    .projectTitle {
-      font-size: 2rem; /* Slightly smaller font size for tablets */
-    }
-  
-    .projectCardContainer {
-      gap: 15px; /* Reduce gap between cards */
-    }
+  .projectCard {
+    flex: 1 1 380px; /* Larger cards on desktop */
   }
-  
-  @media (max-width: 768px) {
-    /* Mobile Styles */
-    .projectTitle {
-      font-size: 1.75rem; /* Smaller font size for mobile */
-    }
-  
-    .projectCardContainer {
-      gap: 10px; /* Further reduce gap between cards */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    /* Small Mobile Styles */
-    .projectTitle {
-      font-size: 1.5rem; /* Even smaller font size for very small screens */
-    }
-  
-    .projectCardContainer {
-      gap: 5px; /* Minimal gap between cards */
-    }
-  }
+}

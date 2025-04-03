@@ -1,0 +1,95 @@
+/* Card container */
+.card {
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Left image section */
+  .card-image {
+    flex: 1;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Right content section */
+  .card-content {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Title styling */
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Description */
+  .card-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Footer: author info */
+  .card-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Author image */
+  .author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  /* Author details */
+  .author-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .publish-date {
+    display: block;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .card {
+      flex-direction: column;
+    }
+  
+    .card-image {
+      height: 150px;
+    }
+  
+    .card-content {
+      padding: 15px;
+    }
+  }
+  
