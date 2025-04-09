@@ -15,13 +15,35 @@ const Skills = () => {
         <div className="skills-category">
           <h2>Frontend</h2>
           <div className="skills-icons">
-          <Icon icon="mdi:react" className="skill-icon" />
-            <Icon icon="mdi:language-javascript" className="skill-icon" />
-            <Icon icon="mdi:language-html5" className="skill-icon" />
-            <Icon icon="mdi:language-css3" className="skill-icon" />
-            <Icon icon="mdi:tailwind" className="skill-icon" />
-            <Icon icon="mdi:bootstrap" className="skill-icon" />
-            <Icon icon="mdi:code-braces" className="skill-icon" />
+            <a href="https://react.dev/" target="_blank">
+              <Icon icon="mdi:react" className="skill-icon" />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+            >
+              {" "}
+              <Icon icon="mdi:language-javascript" className="skill-icon" />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+            >
+              <Icon icon="mdi:language-html5" className="skill-icon" />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+            >
+              <Icon icon="mdi:language-css3" className="skill-icon" />
+            </a>
+            <a href="https://tailwindcss.com/" target="_blank">
+              {" "}
+              <Icon icon="mdi:tailwind" className="skill-icon" />
+            </a>
+            <a href="https://getbootstrap.com/" target="_blank">
+              <Icon icon="mdi:bootstrap" className="skill-icon" />
+            </a>
           </div>
         </div>
 
@@ -29,10 +51,19 @@ const Skills = () => {
         <div className="skills-category">
           <h2>Backend</h2>
           <div className="skills-icons">
-          <Icon icon="mdi:language-java" className="skill-icon" />
-            <Icon icon="mdi:nodejs" className="skill-icon" />
-            <Icon icon="simple-icons:express" className="skill-icon" />
-            <Icon icon="simple-icons:oracle" className="skill-icon" />
+            <a href="https://www.java.com/en/" target="_blank">
+              <Icon icon="mdi:language-java" className="skill-icon" />
+            </a>
+            <a href="https://nodejs.org/en" target="_blank">
+              {" "}
+              <Icon icon="mdi:nodejs" className="skill-icon" />
+            </a>
+            <a href="https://expressjs.com/" target="_blank">
+              <Icon icon="simple-icons:express" className="skill-icon" />
+            </a>
+            <a href="https://www.oracle.com/in/database/" target="_blank">
+              <Icon icon="simple-icons:oracle" className="skill-icon" />
+            </a>
           </div>
         </div>
 
@@ -40,12 +71,29 @@ const Skills = () => {
         <div className="skills-category">
           <h2>Other</h2>
           <div className="skills-icons">
-          <Icon icon="mdi:android-studio" className="skill-icon" />
-            <Icon icon="solar:figma-bold-duotone" className="skill-icon" />
-            <Icon icon="simple-icons:adobexd" className="skill-icon" />
-            <Icon icon="mdi:git" className="skill-icon" />
-            <Icon icon="mdi:github" className="skill-icon" />
-            <Icon icon="simple-icons:postman" className="skill-icon" />
+            <a href="https://developer.android.com/" target="_blank">
+              {" "}
+              <Icon icon="mdi:android-studio" className="skill-icon" />
+            </a>
+            <a href="https://www.figma.com/" target="_blank">
+              {" "}
+              <Icon icon="solar:figma-bold-duotone" className="skill-icon" />
+            </a>
+            <a href="https://adobexdplatform.com/" target="_blank">
+              <Icon icon="simple-icons:adobexd" className="skill-icon" />
+            </a>
+            <a href="https://git-scm.com/" target="_blank">
+              {" "}
+              <Icon icon="mdi:git" className="skill-icon" />
+            </a>
+            <a href="https://github.com/" target="_blank">
+              {" "}
+              <Icon icon="mdi:github" className="skill-icon" />
+            </a>
+            <a href="https://www.postman.com/" target="_blank">
+              {" "}
+              <Icon icon="simple-icons:postman" className="skill-icon" />
+            </a>
           </div>
         </div>
       </div>
