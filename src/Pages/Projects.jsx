@@ -7,9 +7,9 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      name: "Project 1",
-      description: "A brief description of the project.",
-      link: "#",
+      name: "Sneakology",
+      description: "Sneakology is a sneaker enthusiast’s paradise—a dedicated platform for sneaker lovers to explore, analyze, and stay updated on the latest hype releases, rare kicks, and streetwear culture.",
+      link: "https://github.com/mayurpawar17/Sneakology",
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ const Projects = () => {
 
           {
             projects.map((project)=>(
-              <Card key={project.id} projectTitle={project.name} projectDescription={project.description}/>
+              <Card key={project.id} projectTitle={project.name} projectDescription={project.description} projectLink={project.link}/>
             ))
           }
         </div>
