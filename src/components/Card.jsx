@@ -1,13 +1,13 @@
 import React from "react";
 import "../assets/styles/pcard.css";
-import shoes_bg from "../assets/images/shoes bg.jpg";
+
 import { Icon } from "@iconify/react";
 
-const Card = ({ projectTitle, projectDescription, projectLink }) => {
+const Card = ({ projectTitle, projectDescription, projectLink, projectImg }) => {
   return (
     <div className="card">
       <div className="card-image">
-        <img src={shoes_bg} alt="Lamp" />
+        <img src={projectImg} alt="Project image" />
       </div>
       <div className="card-content">
         <h2 className="card-title">{projectTitle}</h2>

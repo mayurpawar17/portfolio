@@ -1,21 +1,23 @@
 import React from "react";
 import "../assets/styles/project.css";
-import ProjectCard from "../components/ProjectCard";
-import Card from '../components/Card'
+import Card from "../components/Card";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
       name: "Sneakology",
-      description: "Sneakology is a sneaker enthusiast’s paradise—a dedicated platform for sneaker lovers to explore, analyze, and stay updated on the latest hype releases, rare kicks, and streetwear culture.",
+      description:
+        "Sneakology is a sneaker enthusiast’s paradise—a dedicated platform for sneaker lovers to explore, analyze, and stay updated on the latest hype releases, rare kicks, and streetwear culture.",
+        image:"",
       link: "https://github.com/mayurpawar17/Sneakology",
     },
     {
       id: 2,
-      name: "Project 2",
-      description: "A brief description of the project.",
-      link: "#",
+      name: "Hospital Management System",
+      description:
+        "Hospital Management System using Java, JDBC, and PostgreSQL to manage patient registration, doctor appointments, and medical records. Utilized Maven for build automation, designed an optimized database schema, and implemented efficient SQL queries.",
+      link: "https://github.com/mayurpawar17/Hospital-Management-System-JDBC.git",
     },
     {
       id: 3,
@@ -25,9 +27,9 @@ const Projects = () => {
     },
     {
       id: 4,
-      name: "Project 4",
-      description: "A brief description of the project.",
-      link: "#",
+      name: "Smart Solar Grass Cutter",
+      description: "The Smart Solar Grass Cutter is an eco-friendly, solar-powered lawn mower that operates in automatic or manual mode via an Android app. It uses ultrasonic sensors for safe, efficient navigation and obstacle avoidance.",
+      link: "https://github.com/mayurpawar17/Smart-Solar-Grass-Cutter.git",
     },
   ];
 
@@ -41,11 +43,15 @@ const Projects = () => {
             <ProjectCard key={project.id} projectTitle={project.name} />
           ))} */}
 
-          {
-            projects.map((project)=>(
-              <Card key={project.id} projectTitle={project.name} projectDescription={project.description} projectLink={project.link}/>
-            ))
-          }
+          {projects.map((project) => (
+            <Card
+              key={project.id}
+              projectTitle={project.name}
+              projectDescription={project.description}
+              projectImg={project.image}
+              projectLink={project.link}
+            />
+          ))}
         </div>
       </div>
     </>

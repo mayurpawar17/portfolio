@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../components/Header";
+
 import "../assets/styles/home.css";
 import { Button } from "@/components/ui/button";
 import Projects from "../Pages/Projects";
 import Skills from "../Pages/Skills";
 import About from "../Pages/About";
 import Footer from "@/components/Footer";
-import Card from "@/components/Card";
+
 
 
 const Home = () => {
