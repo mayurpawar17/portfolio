@@ -19,7 +19,7 @@ const Projects = () => {
       description:
         "Hospital Management System using Java, JDBC, and PostgreSQL to manage patient registration, doctor appointments, and medical records. Utilized Maven for build automation, designed an optimized database schema, and implemented efficient SQL queries.",
       image:
-        "https://github.com/mayurpawar17/portfolio/blob/main/src/assets/projectImgs/sneakologBg.jpg?raw=true",
+        "https://github.com/mayurpawar17/portfolio/blob/main/src/assets/projectImgs/hospitalManagementSystemBg.png?raw=true",
       link: "https://github.com/mayurpawar17/Hospital-Management-System-JDBC.git",
     },
     {
