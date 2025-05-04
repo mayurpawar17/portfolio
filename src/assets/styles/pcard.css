@@ -53,13 +53,17 @@
 
 /* Footer: author info */
 .card-footer {
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+ 
 padding: 0.2rem;
   border-radius: 8px;
+}
+.card-footer:hover{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 /* Author image */

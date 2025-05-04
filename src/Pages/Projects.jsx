@@ -32,9 +32,16 @@ const Projects = () => {
     },
     {
       id: 4,
+      name: "GrowMate App",
+      description: "GrowMate is an Android application designed to assist plant enthusiasts in managing and taking care of their plants. The app features user authentication via Firebase for a personalized experience.",
+      image : "https://github.com/mayurpawar17/portfolio/blob/main/src/assets/projectImgs/smartSolarGrassCutterBg.jpeg?raw=true",
+      link: "https://github.com/mayurpawar17/GrowMate-plant-app.git",
+    },
+    {
+      id: 5,
       name: "Smart Solar Grass Cutter",
       description: "The Smart Solar Grass Cutter is an eco-friendly, solar-powered lawn mower that operates in automatic or manual mode via an Android app. It uses ultrasonic sensors for safe, efficient navigation and obstacle avoidance.",
-      image : "https://github.com/mayurpawar17/portfolio/blob/main/src/assets/projectImgs/sneakologBg.jpg?raw=true",
+      image : "https://github.com/mayurpawar17/portfolio/blob/main/src/assets/projectImgs/smartSolarGrassCutterBg.jpeg?raw=true",
       link: "https://github.com/mayurpawar17/Smart-Solar-Grass-Cutter.git",
     },
   ];
