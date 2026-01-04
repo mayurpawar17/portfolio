@@ -16,7 +16,7 @@ const Home = () => {
       {/* <Header /> */}
 
       <main>
-        <p className="tagline animate__animated animate__fadeInDown ">Design. Develop. Deploy</p>
+        <p className="tagline animate__animated animate__fadeInDown">Design. Develop. Deploy</p>
         <Button variant="ghost" style={{ padding: "0vh 1vw" }} >
            <a href="/about">Know more</a> 
         </Button>
