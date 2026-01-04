@@ -1,5 +1,5 @@
 import "../styles/Hero.css";
-
+import { Icon } from "@iconify/react";
 import profileImg from "../assets/porfolio.jpg";
 
 export default function Hero() {
@@ -16,11 +16,33 @@ export default function Hero() {
           </p>
 
           <div className="hero-icons">
-            <span>🐙</span>
-            <span>🎓</span>
-            <span>in</span>
-            <span>X</span>
-            <span>✉️</span>
+            <span>
+              {" "}
+              <Icon
+                icon="mdi:github"
+                width="24"
+                height="24"
+                style={{ color: "#000" }}
+              />
+            </span>
+            <span>
+              {" "}
+              <Icon
+                icon="mdi:linkedin"
+                width="24"
+                height="24"
+                style={{ color: "#000" }}
+              />
+            </span>
+            <span>
+              {" "}
+              <Icon
+                icon="mdi:email"
+                width="24"
+                height="24"
+                style={{ color: "#000" }}
+              />
+            </span>
           </div>
         </div>
 

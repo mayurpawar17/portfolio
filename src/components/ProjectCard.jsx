@@ -14,7 +14,7 @@ const ProjectCard = ({ title, date, desc, image, tags }) => {
           {tags.map((tag, index) => (
             <span
               key={index}
-              className={`project-tag ${tag === "Website" ? "dark" : ""}`}
+              className={`project-tag ${tag === "Website" || "Github" ? "dark" : ""}`}
             >
               {tag}
             </span>

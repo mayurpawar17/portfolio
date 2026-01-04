@@ -2,6 +2,8 @@ import '../styles/Section.css'
 import '../styles/Projects.css'
 
 import ProjectCard from "../components/ProjectCard";
+import sneakology from '../assets/projectImgs/sneakologBg.jpg'
+import growMate from '../assets/projectImgs/growMateBg.png'
 
 const Projects = () => {
   return (
@@ -11,19 +13,19 @@ const Projects = () => {
 
       <div className="projects-grid">
         <ProjectCard
-          title="Video-Ocean Video Agent"
-          date="Jun. 2025 – Present"
-          desc="Video-Ocean Video Agent generates videos up to minutes with a few clicks."
-          image="https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          tags={["Website"]}
+          title="Sneakology"
+          date=""
+          desc="Sneakology is a sneaker enthusiast’s paradise—a dedicated platform for sneaker lovers to explore, analyze, and stay updated on the latest hype releases, rare kicks, and streetwear culture."
+          image={sneakology}
+          tags={["Website","Github"]}
         />
 
         <ProjectCard
-          title="Open-Sora"
-          date="Mar. 2024 – Mar. 2025"
-          desc="The world’s first open-source Sora-like video generation model."
-         image="https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          tags={["GitHub", "Open-Sora 1.2", "Open-Sora 2.0"]}
+          title="GrowMate App"
+          // date="Mar. 2024 – Mar. 2025"
+          desc="GrowMate is an Android application designed to assist plant enthusiasts in managing and taking care of their plants. The app features user authentication via Firebase for a personalized experience."
+         image={growMate}
+          tags={["GitHub"]}
         />
 
         <ProjectCard

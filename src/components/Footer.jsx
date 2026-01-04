@@ -1,4 +1,6 @@
 import "../styles/Footer.css";
+import { Icon } from "@iconify/react";
+const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
@@ -13,7 +15,6 @@ const Footer = () => {
             <li>Education</li>
             <li>Experience</li>
             <li>Skills</li>
-            <li>Awards</li>
           </ul>
         </div>
 
@@ -21,14 +22,35 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Connect</h4>
           <div className="social-grid">
-            <span>GitHub</span>
-            <span>Google Scholar</span>
-            <span>LinkedIn</span>
-            <span>X</span>
-            <span>Instagram</span>
-            <span>Discord</span>
-            <span>WeChat</span>
-            <span>RSS</span>
+            <span>
+              {" "}
+              <Icon
+                icon="mdi:github"
+                width="24"
+                height="24"
+                style={{ color: "#000" }}
+              />
+            </span>
+
+            <span>
+              {" "}
+              <Icon
+                icon="mdi:linkedin"
+                width="24"
+                height="24"
+                style={{ color: "#000" }}
+              />
+            </span>
+
+            <span>
+              {" "}
+              <Icon
+                icon="mdi:instagram"
+                width="24"
+                height="24"
+                style={{ color: "#000" }}
+              />
+            </span>
           </div>
         </div>
 
@@ -36,17 +58,15 @@ const Footer = () => {
         <div className="footer-col">
           <h4>Resources</h4>
           <ul>
-            <li>Blog</li>
-            <li>Prompts</li>
             <li>Template</li>
             <li>Download CV</li>
-            <li>QR code</li>
+            {/* <li>QR code</li> */}
             <li>Business card</li>
           </ul>
         </div>
 
         {/* Column 4 */}
-        <div className="footer-col">
+        {/* <div className="footer-col">
           <h4>Discover</h4>
           <ul>
             <li>Friends</li>
@@ -55,23 +75,23 @@ const Footer = () => {
             <li>NJU-CSE-Flyers</li>
             <li>HPC-AI Tech</li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Column 5 */}
-        <div className="footer-col">
+        {/* <div className="footer-col">
           <h4>Contact</h4>
           <ul>
             <li>Singapore</li>
             <li>Support</li>
           </ul>
-        </div>
+        </div> */}
       </div>
 
       <div className="footer-divider"></div>
 
       <div className="footer-bottom">
         <div>
-          © 2026 Mayur Pawar · All rights reserved
+          © {currentYear} Mayur Pawar · All rights reserved
           {/* <br />
           Last updated: 2025.12 */}
         </div>
