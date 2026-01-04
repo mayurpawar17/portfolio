@@ -1,0 +1,42 @@
+/* Grid layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  margin-bottom: 2.8rem;
+}
+
+/* Show all button */
+.show-all {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  padding: 0.55rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.show-all:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .show-all {
+    width: 100%;
+  }
+}

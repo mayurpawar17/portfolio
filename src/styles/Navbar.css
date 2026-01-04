@@ -1,0 +1,88 @@
+/* .nav {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 999px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.nav-btn:hover {
+  opacity: 1;
+}
+
+.nav-divider {
+  width: 1px;
+  height: 18px;
+  background: #ddd;
+  margin: 0 6px;
+}
+
+.nav-lang {
+  font-size: 14px;
+  font-weight: 500;
+} */
+
+
+
+.nav {
+  position: fixed;
+  top: 24px; /* default for desktop */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 999px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  transition: top 0.3s, bottom 0.3s; /* smooth transition */
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.nav-btn:hover {
+  opacity: 1;
+}
+
+.nav-divider {
+  width: 1px;
+  height: 18px;
+  background: #ddd;
+  margin: 0 6px;
+}
+
+.nav-lang {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Media query for mobile/tablet */
+@media (max-width: 1024px) {
+  .nav {
+    top: auto;       /* remove top */
+    bottom: 24px;    /* set bottom */
+  }
+}

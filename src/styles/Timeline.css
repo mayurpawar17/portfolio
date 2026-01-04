@@ -1,0 +1,76 @@
+.timeline-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.2rem;
+}
+
+.timeline-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  color: #111;
+}
+
+/* Row */
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+/* Left side */
+.timeline-left {
+  display: flex;
+  gap: 1rem;
+  max-width: 70%;
+}
+
+.timeline-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.timeline-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111;
+}
+
+.timeline-subtitle {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.15rem;
+}
+
+/* Right side */
+.timeline-right {
+  font-size: 0.9rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+/* Divider spacing */
+.timeline-divider {
+  height: 1px;
+  background: #f0f0f0;
+  margin: 2rem 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+  }
+
+  .timeline-left {
+    max-width: 100%;
+  }
+
+  .timeline-right {
+    margin-left: 3.2rem;
+  }
+}

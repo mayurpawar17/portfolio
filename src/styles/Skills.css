@@ -1,0 +1,28 @@
+.skills-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.2rem;
+}
+
+.skills-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-chip {
+  background: #111;
+  color: #fff;
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
