@@ -8,7 +8,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.6rem;
-  color: #111;
+  color: var(--text-color);
 }
 
 /* Row */
@@ -37,26 +37,26 @@
 .timeline-title {
   font-weight: 600;
   font-size: 1rem;
-  color: #111;
+  color: var(--text-color);
 }
 
 .timeline-subtitle {
   font-size: 0.9rem;
-  color: #555;
+  color: var(--text-secondary);
   margin-top: 0.15rem;
 }
 
 /* Right side */
 .timeline-right {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-muted);
   white-space: nowrap;
 }
 
 /* Divider spacing */
 .timeline-divider {
   height: 1px;
-  background: #f0f0f0;
+  background: var(--divider-color);
   margin: 2rem 0;
 }
 

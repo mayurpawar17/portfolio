@@ -1,6 +1,7 @@
 .hero {
   padding-top: 120px;
   padding-bottom: 80px;
+  background: var(--bg-color);
 }
 
 .hero-content {
@@ -16,19 +17,20 @@
 .hero-text h1 {
   font-size: 3.5rem;
   font-weight: 800;
+  color: var(--text-color);
 }
 
 .hero-sub {
   margin-top: 6px;
   font-size: 1.1rem;
-  color: #666;
+  color: var(--text-muted);
 }
 
 .hero-desc {
   margin-top: 16px;
   font-size: 1.15rem;
   line-height: 1.6;
-  color: #333;
+  color: var(--text-secondary);
 }
 
 .hero-icons {
@@ -37,6 +39,7 @@
   gap: 14px;
   font-size: 18px;
   opacity: 0.75;
+  color: var(--text-muted);
 }
 
 .hero-avatar {
@@ -44,6 +47,7 @@
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
+  border: 2px solid var(--border-color);
 }
 
 /* Tablet */

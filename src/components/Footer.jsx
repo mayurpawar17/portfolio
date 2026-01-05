@@ -28,7 +28,7 @@ const Footer = () => {
                 icon="mdi:github"
                 width="24"
                 height="24"
-                style={{ color: "#000" }}
+               style={{ color: "#a3a3a3" }}
               />
             </span>
 
@@ -38,7 +38,7 @@ const Footer = () => {
                 icon="mdi:linkedin"
                 width="24"
                 height="24"
-                style={{ color: "#000" }}
+             style={{ color: "#a3a3a3" }}
               />
             </span>
 
@@ -48,7 +48,7 @@ const Footer = () => {
                 icon="mdi:instagram"
                 width="24"
                 height="24"
-                style={{ color: "#000" }}
+                 style={{ color: "#a3a3a3" }}
               />
             </span>
           </div>

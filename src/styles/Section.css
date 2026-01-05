@@ -7,8 +7,8 @@
 
 .section-badge {
   display: inline-block;
-  background: #111;
-  color: #fff;
+  background: var(--badge-bg);
+  color: var(--badge-text);
   padding: 0.3rem 0.85rem;
   border-radius: 999px;
   font-size: 0.75rem;
@@ -20,7 +20,7 @@
   font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 3rem;
-  color: #111;
+  color: var(--text-color);
 }
 
 /* Tablet */

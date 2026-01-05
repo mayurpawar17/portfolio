@@ -9,18 +9,19 @@
 /* Show all button */
 .show-all {
   background: transparent;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--border-color);
   padding: 0.55rem 1.2rem;
   border-radius: 999px;
   font-size: 0.9rem;
   cursor: pointer;
+  color: var(--text-color);
   transition: all 0.2s ease;
 }
 
 .show-all:hover {
-  background: #111;
-  color: #fff;
-  border-color: #111;
+  background: var(--btn-hover-bg);
+  color: var(--btn-hover-text);
+  border-color: var(--btn-hover-bg);
 }
 
 /* Tablet */

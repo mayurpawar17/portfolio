@@ -1,88 +1,78 @@
-/* .nav {
-  position: fixed;
-  top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  border-radius: 999px;
-  padding: 10px 14px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  z-index: 1000;
-}
-
-.nav-btn {
+/* Theme toggle button */
+.theme-btn {
   background: none;
   border: none;
-  font-size: 16px;
+  font-size: 1.3rem;
   cursor: pointer;
-  opacity: 0.7;
+  margin-left: 1rem;
+  color: var(--text-color);
+  transition: transform 0.2s ease;
 }
 
-.nav-btn:hover {
-  opacity: 1;
+.theme-btn:hover {
+  transform: scale(1.15);
 }
 
-.nav-divider {
-  width: 1px;
-  height: 18px;
-  background: #ddd;
-  margin: 0 6px;
-}
-
-.nav-lang {
-  font-size: 14px;
-  font-weight: 500;
-} */
-
-
-
+/* Navbar container */
 .nav {
   position: fixed;
-  top: 24px; /* default for desktop */
+  top: 4px; /* desktop */
   left: 50%;
   transform: translateX(-50%);
-  background: #fff;
-  border-radius: 999px;
+  background: var(--nav-bg);
+  border-radius: 10px;
   padding: 10px 14px;
   display: flex;
   align-items: center;
   gap: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 25px var(--nav-shadow);
   z-index: 1000;
-  transition: top 0.3s, bottom 0.3s; /* smooth transition */
+  transition: top 0.3s ease, bottom 0.3s ease, background 0.3s ease;
 }
 
+/* Navbar buttons */
 .nav-btn {
   background: none;
   border: none;
   font-size: 16px;
   cursor: pointer;
   opacity: 0.7;
+  color: var(--text-color);
 }
 
 .nav-btn:hover {
   opacity: 1;
 }
 
+/* Divider */
 .nav-divider {
   width: 1px;
   height: 18px;
-  background: #ddd;
+  background: var(--divider-color);
   margin: 0 6px;
 }
 
+/* Language text */
 .nav-lang {
   font-size: 14px;
   font-weight: 500;
+  color: var(--text-color);
 }
 
-/* Media query for mobile/tablet */
+.nav-icon {
+  color: var(--icon-color);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-btn:hover .nav-icon {
+  transform: scale(1.1);
+}
+
+
+/* Mobile & Tablet → bottom center */
 @media (max-width: 1024px) {
   .nav {
-    top: auto;       /* remove top */
-    bottom: 24px;    /* set bottom */
+    top: auto;
+    bottom: 24px;
   }
 }

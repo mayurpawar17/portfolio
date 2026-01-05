@@ -22,7 +22,7 @@ export default function Hero() {
                 icon="mdi:github"
                 width="24"
                 height="24"
-                style={{ color: "#000" }}
+                style={{ color: "#a3a3a3" }}
               />
             </span>
             <span>
@@ -31,7 +31,7 @@ export default function Hero() {
                 icon="mdi:linkedin"
                 width="24"
                 height="24"
-                style={{ color: "#000" }}
+                style={{ color: "#a3a3a3" }}
               />
             </span>
             <span>
@@ -40,7 +40,7 @@ export default function Hero() {
                 icon="mdi:email"
                 width="24"
                 height="24"
-                style={{ color: "#000" }}
+                style={{ color: "#a3a3a3" }}
               />
             </span>
           </div>

@@ -8,14 +8,13 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #111;
+  color: var(--text-color);
 }
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 0.6rem; */
-    gap: 12px;
+  gap: 12px;
 }
 
 .skill-chip {
@@ -24,13 +23,9 @@
   gap: 8px;
   padding: 0.35rem 0.85rem;
   border-radius: 8px;
-  background: #111;
-    color: #fff;
+  background: var(--skill-bg);
+  color: var(--skill-text);
   font-size: 0.8rem;
   font-weight: 500;
-    white-space: nowrap;
-} 
-
-/* .skill-chip i {
-  font-size: 18px;
-} */
+  white-space: nowrap;
+}
