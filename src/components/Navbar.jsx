@@ -20,7 +20,6 @@ export default function Navbar() {
       </button>
 
       <div className="nav-divider" />
-
       <ThemeToggle />
     </nav>
   );
