@@ -8,7 +8,7 @@ import growMate from '../assets/projectImgs/growMateBg.png'
 const Projects = () => {
   return (
     <section className="section">
-      <span className="section-badge">Selected Projects</span>
+      {/* <span className="section-badge">Selected Projects</span> */}
       <h2 className="section-title">Check out my latest work</h2>
 
       <div className="projects-grid">
@@ -35,9 +35,25 @@ const Projects = () => {
            image="https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           tags={["Website", "#1 Product Hunt"]}
         />
+
+         <ProjectCard
+          title="Video-Ocean"
+          date="Apr. 2025 – Present"
+          desc="A video generation platform supporting video, image and audio."
+           image="https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          tags={["Website", "#1 Product Hunt"]}
+        />
+
+         <ProjectCard
+          title="Video-Ocean"
+          date="Apr. 2025 – Present"
+          desc="A video generation platform supporting video, image and audio."
+           image="https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          tags={["Website", "#1 Product Hunt"]}
+        />
       </div>
 
-      <button className="show-all">⌄ Show All</button>
+      {/* <button className="show-all">Show All</button> */}
     </section>
   );
 };

@@ -18,30 +18,33 @@ export default function Hero() {
           <div className="hero-icons">
             <span>
               {" "}
-              <Icon
-                icon="mdi:github"
-                width="24"
-                height="24"
-                style={{ color: "#a3a3a3" }}
-              />
+              <a
+                href="https://github.com/mayurpawar17"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <Icon icon="mdi:github" width="24" height="24" />
+              </a>
             </span>
             <span>
               {" "}
-              <Icon
-                icon="mdi:linkedin"
-                width="24"
-                height="24"
-                style={{ color: "#a3a3a3" }}
-              />
+              <a
+                href="https://www.linkedin.com/in/mayurpawar17"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <Icon icon="mdi:linkedin" width="24" height="24" />
+              </a>
             </span>
             <span>
               {" "}
-              <Icon
-                icon="mdi:email"
-                width="24"
-                height="24"
-                style={{ color: "#a3a3a3" }}
-              />
+              <a href="mailto:mayurpawar4908@gmail.com"  target="_blank"
+                rel="noopener noreferrer">
+                {" "}
+                <Icon icon="mdi:email" width="24" height="24" />
+              </a>
             </span>
           </div>
         </div>
