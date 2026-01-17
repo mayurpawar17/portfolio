@@ -6,9 +6,16 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
+import { motion } from "framer-motion";
+
 export default function App() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <Navbar />
       <Hero />
       <Projects />
@@ -16,6 +23,6 @@ export default function App() {
       <Education />
       <Experience />
       <Footer />
-    </>
+    </motion.div>
   );
 }
