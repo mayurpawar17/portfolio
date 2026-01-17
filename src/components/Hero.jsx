@@ -8,11 +8,13 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-text">
           <h1>Mayur Pawar</h1>
-          <p className="hero-sub">मयूर पवार</p>
+          <p className="hero-sub">Flutter developer at Kapil IT Solutions</p>
 
           <p className="hero-desc">
-            Full Stack Developer <br />
-            Flutter developer at Kapil IT Solutions
+            Flutter Developer focused on building scalable, high-performance
+            mobile applications with clean UI and smooth user experiences.
+            Passionate about modern app architecture, state management, and
+            continuous learning.
           </p>
 
           <div className="hero-icons">
@@ -40,8 +42,11 @@ export default function Hero() {
             </span>
             <span>
               {" "}
-              <a href="mailto:mayurpawar4908@gmail.com"  target="_blank"
-                rel="noopener noreferrer">
+              <a
+                href="mailto:mayurpawar4908@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {" "}
                 <Icon icon="mdi:email" width="24" height="24" />
               </a>
