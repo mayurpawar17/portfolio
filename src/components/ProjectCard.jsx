@@ -3,7 +3,10 @@ import "../styles/ProjectCard.css";
 const ProjectCard = ({ title, date, desc, image, tags }) => {
   return (
     <div className="project-card">
-      <img src={image} alt={title} className="project-image" />
+      <div className="project-image-wrapper">
+        <img src={image} alt={title} className="project-image" />
+      </div>
+      {/* <img src={image} alt={title} className="project-image" /> */}
 
       <div className="project-body">
         <h3 className="project-title">{title}</h3>
@@ -14,7 +17,7 @@ const ProjectCard = ({ title, date, desc, image, tags }) => {
           {tags.map((tag, index) => (
             <span
               key={index}
-              className={`project-tag ${tag === "Website" || "Github" ? "dark" : ""}`}
+              className={`project-tag ${tag === "Website" || tag === "Github" ? "dark" : ""}`}
             >
               {tag}
             </span>
