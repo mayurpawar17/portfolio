@@ -28,7 +28,7 @@ const Footer = () => {
                 icon="mdi:github"
                 width="24"
                 height="24"
-               style={{ color: "#a3a3a3" }}
+                style={{ color: "#a3a3a3" }}
               />
             </span>
 
@@ -38,19 +38,19 @@ const Footer = () => {
                 icon="mdi:linkedin"
                 width="24"
                 height="24"
-             style={{ color: "#a3a3a3" }}
+                style={{ color: "#a3a3a3" }}
               />
             </span>
 
-            <span>
+            {/* <span>
               {" "}
               <Icon
                 icon="mdi:instagram"
                 width="24"
                 height="24"
-                 style={{ color: "#a3a3a3" }}
+                style={{ color: "#a3a3a3" }}
               />
-            </span>
+            </span> */}
           </div>
         </div>
 
@@ -90,16 +90,12 @@ const Footer = () => {
       <div className="footer-divider"></div>
 
       <div className="footer-bottom">
-        <div>
-          © {currentYear} Mayur Pawar · All rights reserved
-          {/* <br />
-          Last updated: 2025.12 */}
-        </div>
+        <div>© Designed & Built by Mayur Pawar · {currentYear}</div>
 
         <div className="footer-links">
-          <span>Privacy Policy</span>
-          <span>•</span>
-          <span>Terms & Disclaimer</span>
+          <span>Built with React</span>
+          <span>|</span>
+          <span>Deployed on Netlify</span>
         </div>
       </div>
     </footer>
