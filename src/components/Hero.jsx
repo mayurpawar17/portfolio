@@ -1,6 +1,6 @@
 import "../styles/Hero.css";
 import { Icon } from "@iconify/react";
-import profileImg from "../assets/porfolio.jpg";
+import profileImg from "../assets/mayur1.png";
 
 export default function Hero() {
   return (
