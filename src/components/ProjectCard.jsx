@@ -14,15 +14,43 @@ const ProjectCard = ({ title, date, desc, image, tags }) => {
         <p className="project-desc">{desc}</p>
 
         <div className="project-tags">
+          {tags.map((tag, index) => {
+            const isDark =
+              tag.name === "Website" ||
+              tag.name === "Github" ||
+              tag.name === "Play Store";
+
+            return tag.link ? (
+              <a
+                key={index}
+                href={tag.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`project-tag ${isDark ? "dark" : ""}`}
+              >
+                {tag.name}
+              </a>
+            ) : (
+              <span
+                key={index}
+                className={`project-tag ${isDark ? "dark" : ""}`}
+              >
+                {tag.name}
+              </span>
+            );
+          })}
+        </div>
+
+        {/* <div className="project-tags">
           {tags.map((tag, index) => (
             <span
               key={index}
-              className={`project-tag ${tag === "Website" || tag === "Github" ? "dark" : ""}`}
+              className={`project-tag ${tag === "Website" || tag === "Github" || tag === "Play Store" ? "dark" : ""}`}
             >
               {tag}
             </span>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
