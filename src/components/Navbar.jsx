@@ -14,6 +14,23 @@ const navItems = [
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
+  const [theme, setTheme] = useState(() =>
+    typeof document !== "undefined" &&
+    document.documentElement.classList.contains("dark")
+      ? "dark"
+      : "light"
+  );
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    if (newTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("theme", newTheme);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,7 +76,7 @@ export default function Navbar() {
           theme="light"
         />
         <div className="w-px h-5 bg-slate-200 mx-1.5" />
-        <ThemeToggle />
+        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       </nav>
 
       {/* ── DARK MODE NAVBAR: rich dark zinc with violet accent ── */}
@@ -81,7 +98,7 @@ export default function Navbar() {
           theme="dark"
         />
         <div className="w-px h-5 bg-zinc-700 mx-1.5" />
-        <ThemeToggle />
+        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       </nav>
     </>
   );

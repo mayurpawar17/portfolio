@@ -7,12 +7,11 @@ const experienceData = [
     company: "Kapil IT Solutions",
     logo: kapilItSolutions,
     location: "Hyderabad, India (Hybrid)",
-    totalDuration: "11 mos",
     experiences: [
       {
         role: "Software Engineer",
         type: "Full-time",
-        period: "Dec 2025 – Present · 5 mos",
+        period: "Dec 2025 – Present",
         bullets: [
           "Architecting and shipping high-performance mobile applications using Flutter & Dart.",
           "Refactoring application structures to use Clean Architecture and state management patterns (BLoC, Riverpod).",
@@ -23,7 +22,7 @@ const experienceData = [
       {
         role: "Flutter Developer Intern",
         type: "Internship",
-        period: "Jun 2025 – Nov 2025 · 6 mos",
+        period: "Jun 2025 – Nov 2025",
         bullets: [
           "Developed responsive user interfaces, custom animated charts, and reusable form components.",
           "Integrated RESTful APIs and set up automated OAuth authentication flows.",
@@ -60,7 +59,7 @@ export default function Experience() {
       <div className="max-w-6xl w-full mx-auto relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <span className="text-primary dark:text-primary-foreground font-semibold tracking-wider uppercase text-sm bg-primary/5 dark:bg-primary/10 px-3 py-1.5 rounded-full">
+          <span className="text-primary dark:text-accent font-semibold tracking-wider uppercase text-sm bg-primary/5 dark:bg-primary/10 px-3 py-1.5 rounded-full">
             Experience
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-slate-900 dark:text-zinc-50 mt-4">
@@ -101,9 +100,6 @@ export default function Experience() {
                       {company.location}
                     </div>
                   </div>
-                </div>
-                <div className="px-3.5 py-1.5 rounded-full bg-slate-100 dark:bg-zinc-800 text-xs font-bold text-slate-600 dark:text-zinc-300 w-fit">
-                  Total Duration: {company.totalDuration}
                 </div>
               </div>
 

@@ -8,22 +8,33 @@ export default function ProjectCard({ title, date, desc, image, tags, tech, achi
     <motion.div
       initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
+      whileHover="hover"
       viewport={{ once: true, margin: "-40px" }}
       transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-      className={`group rounded-2xl border border-slate-200/60 dark:border-zinc-800/60 bg-white dark:bg-zinc-900/40 shadow-sm hover:shadow-lg hover:border-slate-300 dark:hover:border-zinc-700 transition-all duration-300 overflow-hidden ${colSpan || ""}`}
+      className={`group rounded-2xl border border-slate-200/60 dark:border-zinc-800/60 bg-white dark:bg-zinc-900/40 shadow-sm hover:shadow-lg hover:border-slate-300 dark:hover:border-zinc-700 hover:-translate-y-1.5 transition-all duration-300 overflow-hidden ${colSpan || ""}`}
     >
       {isWide ? (
         /* ── Wide Card: side-by-side image + content ── */
         <div className="flex flex-col lg:flex-row h-full">
           {/* Image */}
           <div className="relative w-full lg:w-[45%] h-52 lg:h-auto overflow-hidden bg-slate-100 dark:bg-zinc-800 shrink-0">
-            <img
+            <motion.img
               src={image}
               alt={title}
-              className="w-full h-full object-cover object-center group-hover:scale-[1.04] transition-transform duration-500"
+              variants={{
+                hover: { scale: 1.06 }
+              }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="w-full h-full object-cover object-center"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <motion.div
+              variants={{
+                hover: { opacity: 1 }
+              }}
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 pointer-events-none"
+            />
           </div>
 
           {/* Content */}
@@ -106,13 +117,23 @@ export default function ProjectCard({ title, date, desc, image, tags, tech, achi
         <div className="flex flex-col h-full">
           {/* Image */}
           <div className="relative w-full h-44 overflow-hidden bg-slate-100 dark:bg-zinc-800 shrink-0">
-            <img
+            <motion.img
               src={image}
               alt={title}
-              className="w-full h-full object-cover object-center group-hover:scale-[1.04] transition-transform duration-500"
+              variants={{
+                hover: { scale: 1.06 }
+              }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="w-full h-full object-cover object-center"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+            <motion.div
+              variants={{
+                hover: { opacity: 1 }
+              }}
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 pointer-events-none"
+            />
           </div>
 
           {/* Content */}

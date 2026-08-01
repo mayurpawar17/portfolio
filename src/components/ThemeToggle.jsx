@@ -2,29 +2,35 @@ import { useState } from "react";
 import { Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function ThemeToggle() {
+export default function ThemeToggle({ theme: propTheme, toggleTheme: propToggleTheme }) {
   // Lazily read current theme from DOM so remounts (e.g. navbar swap) are instant
-  const [theme, setTheme] = useState(() =>
+  const [localTheme, setLocalTheme] = useState(() =>
     typeof document !== "undefined" &&
     document.documentElement.classList.contains("dark")
       ? "dark"
       : "light"
   );
 
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    if (newTheme === "dark") {
-      document.documentElement.classList.add("dark");
+  const theme = propTheme !== undefined ? propTheme : localTheme;
+
+  const handleToggle = () => {
+    if (propToggleTheme) {
+      propToggleTheme();
     } else {
-      document.documentElement.classList.remove("dark");
+      const newTheme = theme === "light" ? "dark" : "light";
+      setLocalTheme(newTheme);
+      if (newTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+      localStorage.setItem("theme", newTheme);
     }
-    localStorage.setItem("theme", newTheme);
   };
 
   return (
     <button
-      onClick={toggleTheme}
+      onClick={handleToggle}
       id="theme-toggle-btn"
       aria-label="Toggle Theme"
       className="relative p-2 rounded-xl border border-slate-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 hover:bg-slate-100 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-300 transition-colors duration-200 cursor-pointer overflow-hidden flex items-center justify-center"

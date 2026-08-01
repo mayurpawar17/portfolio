@@ -82,7 +82,7 @@ export default function App() {
             onClick={scrollToTop}
             id="back-to-top-btn"
             aria-label="Back to Top"
-            className="fixed bottom-24 lg:bottom-8 right-6 z-50 p-3 rounded-xl border border-slate-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 text-slate-700 dark:text-zinc-300 hover:text-primary dark:hover:text-primary-foreground hover:bg-slate-100 dark:hover:bg-zinc-800 shadow-lg cursor-pointer transition-colors duration-200 flex items-center justify-center"
+            className="fixed bottom-24 lg:bottom-8 right-6 z-50 p-3 rounded-xl border border-slate-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 text-slate-700 dark:text-zinc-300 hover:text-primary dark:hover:text-accent hover:bg-slate-100 dark:hover:bg-zinc-800 shadow-lg cursor-pointer transition-colors duration-200 flex items-center justify-center"
           >
             <ArrowUp className="w-5 h-5" />
           </motion.button>

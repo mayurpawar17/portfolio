@@ -7,42 +7,78 @@ const skillsData = [
     icon: Smartphone,
     color: "from-blue-500/10 to-indigo-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20",
     status: "Primary Core",
-    skills: ["Flutter", "Dart", "Java", "Kotlin", "Android Studio"]
+    skills: [
+      { name: "Flutter", icon: "devicon-flutter-plain colored" },
+      { name: "Dart", icon: "devicon-dart-plain colored" },
+      { name: "Java", icon: "devicon-java-plain colored" },
+      { name: "Kotlin", icon: "devicon-kotlin-plain colored" },
+      { name: "Android Studio", icon: "devicon-android-plain colored" }
+    ]
   },
   {
     category: "Frontend",
     icon: Code,
     color: "from-purple-500/10 to-pink-500/10 text-purple-600 dark:text-purple-400 border-purple-500/20",
     status: "Highly Active",
-    skills: ["React.js", "JavaScript", "HTML5 & CSS3", "Tailwind CSS", "Figma"]
+    skills: [
+      { name: "React.js", icon: "devicon-react-original colored" },
+      { name: "JavaScript", icon: "devicon-javascript-plain colored" },
+      { name: "HTML5", icon: "devicon-html5-plain colored" },
+      { name: "CSS3", icon: "devicon-css3-plain colored" },
+      { name: "Tailwind CSS", icon: "devicon-tailwindcss-original colored" },
+      { name: "Figma", icon: "devicon-figma-plain colored" }
+    ]
   },
   {
     category: "Backend",
     icon: Server,
     color: "from-orange-500/10 to-amber-500/10 text-orange-600 dark:text-orange-400 border-orange-500/20",
     status: "System Architecture",
-    skills: ["Node.js", "Express.js", "RESTful APIs", "MVC Pattern"]
+    skills: [
+      { name: "Spring Boot", icon: "devicon-spring-original colored" },
+      { name: "Spring Data JPA", icon: "devicon-spring-original colored" },
+      { name: "Spring Security", icon: "devicon-spring-original colored" },
+      { name: "Microservices", icon: null },
+      { name: "RESTful APIs", icon: null }
+    ]
   },
   {
     category: "Database",
     icon: Database,
     color: "from-emerald-500/10 to-teal-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20",
     status: "Query & Model",
-    skills: ["PostgreSQL", "MongoDB", "Supabase DB", "Firebase Firestore", "Prisma ORM"]
+    skills: [
+      { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
+      { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
+      { name: "Supabase DB", icon: "devicon-supabase-plain colored" },
+      { name: "Firebase Firestore", icon: "devicon-firebase-plain colored" },
+      { name: "Prisma ORM", icon: "devicon-prisma-original colored" }
+    ]
   },
   {
     category: "Cloud",
     icon: Cloud,
     color: "from-sky-500/10 to-cyan-500/10 text-sky-600 dark:text-sky-400 border-sky-500/20",
     status: "Deployments",
-    skills: ["Netlify", "Vercel", "Firebase Hosting", "AWS basics"]
+    skills: [
+      { name: "Netlify", icon: "devicon-netlify-plain colored" },
+      { name: "Vercel", icon: "devicon-vercel-original colored" },
+      { name: "Firebase Hosting", icon: "devicon-firebase-plain colored" },
+      { name: "AWS basics", icon: "devicon-amazonwebservices-original colored" }
+    ]
   },
   {
     category: "Tools",
     icon: Cpu,
     color: "from-slate-500/10 to-zinc-500/10 text-slate-600 dark:text-zinc-400 border-slate-500/20",
     status: "Version & Env",
-    skills: ["Docker", "Git & GitHub", "GitHub Actions", "Postman", "CLI Shell"]
+    skills: [
+      { name: "Docker", icon: "devicon-docker-plain colored" },
+      { name: "Git & GitHub", icon: "devicon-git-plain colored" },
+      { name: "GitHub Actions", icon: "devicon-github-original colored" },
+      { name: "Postman", icon: "devicon-postman-plain colored" },
+      { name: "CLI Shell", icon: "devicon-bash-plain colored" }
+    ]
   }
 ];
 
@@ -72,7 +108,7 @@ export default function Skills() {
       <div className="max-w-6xl w-full mx-auto relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-16">
-          <span className="text-primary dark:text-primary-foreground font-semibold tracking-wider uppercase text-xs bg-primary/5 dark:bg-primary/10 px-3 py-1 rounded-full">
+          <span className="text-primary dark:text-accent font-semibold tracking-wider uppercase text-xs bg-primary/5 dark:bg-primary/10 px-3 py-1 rounded-full">
             Skills
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-slate-900 dark:text-zinc-50 mt-4">
@@ -123,10 +159,14 @@ export default function Skills() {
                     {item.skills.map((skill, sIdx) => (
                       <span
                         key={sIdx}
-                        className="text-xs px-2.5 py-1 rounded-lg border border-slate-200/50 dark:border-zinc-800/60 bg-slate-50/50 dark:bg-zinc-900/50 hover:bg-white dark:hover:bg-zinc-800 text-slate-600 dark:text-zinc-300 font-sans transition-all duration-200 hover:scale-[1.02] cursor-default flex items-center gap-1.5"
+                        className="text-xs px-2.5 py-1.5 rounded-lg border border-slate-200/50 dark:border-zinc-800/60 bg-slate-50/50 dark:bg-zinc-900/50 hover:bg-white dark:hover:bg-zinc-800 text-slate-600 dark:text-zinc-300 font-sans transition-all duration-200 hover:scale-[1.02] cursor-default flex items-center gap-2"
                       >
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary/40 dark:bg-primary/60 group-hover:bg-primary transition-colors duration-200" />
-                        {skill}
+                        {skill.icon ? (
+                          <i className={`${skill.icon} text-[15px] shrink-0`} />
+                        ) : (
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary/40 dark:bg-primary/60 group-hover:bg-primary transition-colors duration-200 shrink-0" />
+                        )}
+                        <span>{skill.name}</span>
                       </span>
                     ))}
                   </div>

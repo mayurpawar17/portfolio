@@ -34,7 +34,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("home")}
-                  className="text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary-foreground transition-colors duration-150 cursor-pointer text-left"
+                  className="text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-accent transition-colors duration-150 cursor-pointer text-left"
                 >
                   Home
                 </button>
@@ -42,7 +42,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("about")}
-                  className="text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary-foreground transition-colors duration-150 cursor-pointer text-left"
+                  className="text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-accent transition-colors duration-150 cursor-pointer text-left"
                 >
                   About & Edu
                 </button>
@@ -50,7 +50,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("skills")}
-                  className="text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary-foreground transition-colors duration-150 cursor-pointer text-left"
+                  className="text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-accent transition-colors duration-150 cursor-pointer text-left"
                 >
                   Skills
                 </button>
@@ -58,7 +58,7 @@ export default function Footer() {
               <li>
                 <button
                   onClick={() => scrollToSection("projects")}
-                  className="text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary-foreground transition-colors duration-150 cursor-pointer text-left"
+                  className="text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-accent transition-colors duration-150 cursor-pointer text-left"
                 >
                   Projects
                 </button>
@@ -77,7 +77,7 @@ export default function Footer() {
                   href="https://github.com/mayurpawar17"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary-foreground transition-colors duration-150"
+                  className="flex items-center gap-1.5 text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-accent transition-colors duration-150"
                 >
                   <Github className="w-4 h-4" />
                   GitHub
@@ -88,7 +88,7 @@ export default function Footer() {
                   href="https://www.linkedin.com/in/mayurpawar17"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary-foreground transition-colors duration-150"
+                  className="flex items-center gap-1.5 text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-accent transition-colors duration-150"
                 >
                   <Linkedin className="w-4 h-4" />
                   LinkedIn
@@ -97,7 +97,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:mayurpawar4908@gmail.com"
-                  className="flex items-center gap-1.5 text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary-foreground transition-colors duration-150"
+                  className="flex items-center gap-1.5 text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-accent transition-colors duration-150"
                 >
                   <Mail className="w-4 h-4" />
                   Email
@@ -116,7 +116,7 @@ export default function Footer() {
                 <a
                   href="/resume.pdf"
                   download
-                  className="flex items-center gap-1.5 text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary-foreground transition-colors duration-150"
+                  className="flex items-center gap-1.5 text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-accent transition-colors duration-150"
                 >
                   <FileText className="w-4 h-4" />
                   Download CV
@@ -127,7 +127,7 @@ export default function Footer() {
                   href="https://play.google.com/store/apps/details?id=com.devmayur.bmi_fitindex_pro"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-primary-foreground transition-colors duration-150"
+                  className="flex items-center gap-1.5 text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-accent transition-colors duration-150"
                 >
                   <Globe className="w-4 h-4" />
                   Google Play Profile
