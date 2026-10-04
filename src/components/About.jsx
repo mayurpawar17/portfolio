@@ -38,16 +38,10 @@ export default function About() {
 
   return (
     <section id="about" className="py-12 md:py-16 bg-slate-50/50 dark:bg-zinc-950/20 relative overflow-hidden px-6 lg:px-8 bg-background text-foreground">
-      {/* Decorative Blur Blob */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-80 h-80 bg-accent/5 dark:bg-accent/5 rounded-full glow-blob pointer-events-none" />
-
       <div className="max-w-6xl w-full mx-auto relative z-10">
         {/* Section Heading */}
         <div className="text-center lg:text-left mb-10">
-          <span className="text-primary dark:text-accent font-semibold tracking-wider uppercase text-xs bg-primary/5 dark:bg-primary/10 px-3 py-1 rounded-full">
-            About Me
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-slate-900 dark:text-zinc-50 mt-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-slate-900 dark:text-zinc-50">
             My Professional Story
           </h2>
         </div>

@@ -4,7 +4,7 @@ const projectsData = [
   {
     title: "Sneakology",
     date: "Jan 2025 – Present",
-    desc: "Sneakology is a sneaker enthusiast's paradise—a dedicated platform for sneaker lovers to explore, analyze, and stay updated on the latest hype releases, rare kicks, and streetwear culture.",
+    desc: "Sneakology is a sneaker enthusiast's platform for sneaker lovers to explore, analyze, and stay updated on the latest hype releases, rare kicks, and streetwear culture.",
     image: "https://github.com/mayurpawar17/published-apps-resources/blob/main/Portfolio/sneakologBg.jpg?raw=true",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     achievements: [
@@ -13,8 +13,7 @@ const projectsData = [
       "Engineered automated caching layers to handle high-frequency sneaker drop tracking."
     ],
     tags: [
-      { name: "Website", link: "https://your-site.com" },
-      { name: "Github", link: "https://github.com/your-repo" }
+      { name: "Github", link: "https://github.com/mayurpawar17" }
     ],
     colSpan: "md:col-span-8"
   },
@@ -30,8 +29,7 @@ const projectsData = [
       "Integrated secure Firebase social OAuth authentication methods."
     ],
     tags: [
-      { name: "Website", link: "https://your-site.com" },
-      { name: "Github", link: "https://github.com/your-repo" }
+      { name: "Github", link: "https://github.com/mayurpawar17" }
     ],
     colSpan: "md:col-span-4"
   },
@@ -64,8 +62,7 @@ const projectsData = [
       "Engineered high-throughput REST APIs to support bulk image and video upload."
     ],
     tags: [
-      { name: "Website", link: "https://your-site.com" },
-      { name: "Github", link: "https://github.com/your-repo" }
+      { name: "Github", link: "https://github.com/mayurpawar17" }
     ],
     colSpan: "md:col-span-8"
   }
@@ -74,20 +71,14 @@ const projectsData = [
 export default function Projects() {
   return (
     <section id="projects" className="py-12 md:py-16 relative overflow-hidden px-6 lg:px-8 bg-background text-foreground">
-      {/* Decorative Blob */}
-      <div className="absolute top-0 left-0 w-80 h-80 bg-accent/5 dark:bg-accent/5 rounded-full glow-blob pointer-events-none" />
-
       <div className="max-w-6xl w-full mx-auto relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-10">
-          <span className="text-primary dark:text-accent font-semibold tracking-wider uppercase text-xs bg-primary/5 dark:bg-primary/10 px-3 py-1 rounded-full">
-            Projects
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-slate-900 dark:text-zinc-50 mt-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-slate-900 dark:text-zinc-50">
             Featured Projects
           </h2>
           <p className="text-slate-500 dark:text-zinc-400 mt-3 max-w-xl mx-auto text-sm sm:text-base">
-            Engineered systems structured into an adaptive Bento Grid showcase. Hover cards to explore code repositories and live implementations.
+            A showcase of production-grade mobile applications and web systems built for performance, reliability, and user experience.
           </p>
         </div>
 

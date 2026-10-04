@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import { Smartphone, Code, Server, Database, Cloud, Cpu } from "lucide-react";
+import { Smartphone, Code, Server, Database, Cloud, Cpu, Layers } from "lucide-react";
 
 const skillsData = [
   {
-    category: "Mobile",
+    category: "Mobile Development",
     icon: Smartphone,
-    color: "from-blue-500/10 to-indigo-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20",
-    status: "Primary Core",
+    color: "from-blue-500/15 to-indigo-500/15 text-blue-600 dark:text-blue-400 border-blue-500/20",
     skills: [
       { name: "Flutter", icon: "devicon-flutter-plain colored" },
       { name: "Dart", icon: "devicon-dart-plain colored" },
@@ -18,10 +17,9 @@ const skillsData = [
     ]
   },
   {
-    category: "Frontend",
+    category: "Frontend Web",
     icon: Code,
-    color: "from-purple-500/10 to-pink-500/10 text-purple-600 dark:text-purple-400 border-purple-500/20",
-    status: "Highly Active",
+    color: "from-purple-500/15 to-pink-500/15 text-purple-600 dark:text-purple-400 border-purple-500/20",
     skills: [
       { name: "React.js", icon: "devicon-react-original colored" },
       { name: "JavaScript", icon: "devicon-javascript-plain colored" },
@@ -31,10 +29,9 @@ const skillsData = [
     ]
   },
   {
-    category: "Backend",
+    category: "Backend Architecture",
     icon: Server,
-    color: "from-orange-500/10 to-amber-500/10 text-orange-600 dark:text-orange-400 border-orange-500/20",
-    status: "System Architecture",
+    color: "from-amber-500/15 to-orange-500/15 text-orange-600 dark:text-orange-400 border-orange-500/20",
     skills: [
       { name: "Python", icon: "devicon-python-plain colored" },
       { name: "FastAPI", icon: "devicon-fastapi-plain colored" },
@@ -44,10 +41,9 @@ const skillsData = [
     ]
   },
   {
-    category: "Database",
+    category: "Databases & Storage",
     icon: Database,
-    color: "from-emerald-500/10 to-teal-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20",
-    status: "Query & Model",
+    color: "from-emerald-500/15 to-teal-500/15 text-emerald-600 dark:text-emerald-400 border-emerald-500/20",
     skills: [
       { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
       { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
@@ -57,10 +53,9 @@ const skillsData = [
     ]
   },
   {
-    category: "Cloud",
+    category: "Cloud & Infrastructure",
     icon: Cloud,
-    color: "from-sky-500/10 to-cyan-500/10 text-sky-600 dark:text-sky-400 border-sky-500/20",
-    status: "Deployments",
+    color: "from-sky-500/15 to-cyan-500/15 text-sky-600 dark:text-sky-400 border-sky-500/20",
     skills: [
       { name: "Netlify", icon: "devicon-netlify-plain colored" },
       { name: "Vercel", icon: "devicon-vercel-original colored" },
@@ -68,10 +63,9 @@ const skillsData = [
     ]
   },
   {
-    category: "Tools",
+    category: "Tools & Workflow",
     icon: Cpu,
-    color: "from-slate-500/10 to-zinc-500/10 text-slate-600 dark:text-zinc-400 border-slate-500/20",
-    status: "Version & Env",
+    color: "from-slate-500/15 to-zinc-500/15 text-slate-600 dark:text-zinc-400 border-slate-500/20",
     skills: [
       { name: "Figma", icon: "devicon-figma-plain colored" },
       { name: "Docker", icon: "devicon-docker-plain colored" },
@@ -102,20 +96,14 @@ export default function Skills() {
 
   return (
     <section id="skills" className="py-12 md:py-16 relative overflow-hidden px-6 lg:px-8 bg-background text-foreground">
-      {/* Decorative Blob */}
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/5 dark:bg-primary/5 rounded-full glow-blob pointer-events-none" />
-
       <div className="max-w-6xl w-full mx-auto relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-10">
-          <span className="text-primary dark:text-accent font-semibold tracking-wider uppercase text-xs bg-primary/5 dark:bg-primary/10 px-3 py-1 rounded-full">
-            Skills
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-slate-900 dark:text-zinc-50 mt-4">
-            Technical Stack
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-slate-900 dark:text-zinc-50">
+            Technologies & Tools
           </h2>
           <p className="text-slate-500 dark:text-zinc-400 mt-3 max-w-xl mx-auto text-sm sm:text-base">
-            Categorized skills designed like clean dashboard widgets. No percentage indicators, just direct execution skills.
+            Languages, frameworks, databases, and tools I use to build scalable mobile and web software.
           </p>
         </div>
 
@@ -124,7 +112,7 @@ export default function Skills() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ once: true, margin: "-60px" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {skillsData.map((item, index) => {
@@ -133,41 +121,37 @@ export default function Skills() {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="relative p-6 rounded-2xl border border-slate-200/60 dark:border-zinc-800/60 bg-white dark:bg-zinc-900/40 backdrop-blur-md shadow-sm hover:shadow-md hover:border-slate-350 dark:hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between group overflow-hidden"
+                className="relative p-6 rounded-2xl border border-slate-200/80 dark:border-zinc-800/80 bg-white/80 dark:bg-zinc-900/50 backdrop-blur-md shadow-sm hover:shadow-md hover:border-slate-300 dark:hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between group"
               >
-                {/* Glowing dashboard accent line */}
-                <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-primary to-accent opacity-30 group-hover:opacity-100 transition-opacity duration-300" />
-
                 <div>
                   {/* Category Header */}
-                  <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center justify-between mb-5">
                     <div className="flex items-center gap-3">
-                      <div className={`p-2 rounded-xl border bg-gradient-to-br ${item.color} flex items-center justify-center shrink-0 shadow-sm`}>
+                      <div className={`p-2.5 rounded-xl border bg-gradient-to-br ${item.color} flex items-center justify-center shrink-0 shadow-xs`}>
                         <CategoryIcon className="w-4 h-4" />
                       </div>
                       <h3 className="text-base font-bold font-display text-slate-800 dark:text-zinc-100 group-hover:text-primary transition-colors duration-200">
                         {item.category}
                       </h3>
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-zinc-500">
-                      {item.status}
-                    </span>
                   </div>
 
                   {/* Skills Grid Badge layout */}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 pt-1">
                     {item.skills.map((skill, sIdx) => (
-                      <span
+                      <div
                         key={sIdx}
-                        className="text-xs px-2.5 py-1.5 rounded-lg border border-slate-200/50 dark:border-zinc-800/60 bg-slate-50/50 dark:bg-zinc-900/50 hover:bg-white dark:hover:bg-zinc-800 text-slate-600 dark:text-zinc-300 font-sans transition-all duration-200 hover:scale-[1.02] cursor-default flex items-center gap-2"
+                        className="text-xs px-3 py-2 rounded-xl border border-slate-200/70 dark:border-zinc-800/80 bg-slate-50/70 dark:bg-zinc-900/70 hover:bg-white dark:hover:bg-zinc-800 hover:border-primary/40 dark:hover:border-primary/40 text-slate-700 dark:text-zinc-200 font-sans transition-all duration-200 hover:scale-[1.02] shadow-xs cursor-default flex items-center gap-2.5"
                       >
                         {skill.icon ? (
-                          <i className={`${skill.icon} text-[15px] shrink-0`} />
+                          <div className="w-5.5 h-5.5 rounded-md bg-white dark:bg-zinc-950 border border-slate-200/60 dark:border-zinc-700/80 flex items-center justify-center shrink-0 p-0.5 shadow-2xs">
+                            <i className={`${skill.icon} text-[15px] shrink-0`} />
+                          </div>
                         ) : (
-                          <span className="w-1.5 h-1.5 rounded-full bg-primary/40 dark:bg-primary/60 group-hover:bg-primary transition-colors duration-200 shrink-0" />
+                          <span className="w-2 h-2 rounded-full bg-primary dark:bg-accent shrink-0" />
                         )}
-                        <span>{skill.name}</span>
-                      </span>
+                        <span className="font-medium text-slate-800 dark:text-zinc-100 text-[12px]">{skill.name}</span>
+                      </div>
                     ))}
                   </div>
                 </div>

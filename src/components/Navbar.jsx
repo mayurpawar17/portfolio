@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Home, User, Code, Folder, History, Award, Mail } from "lucide-react";
+import { motion } from "framer-motion";
+import { Home, User, History, Code, Folder, Award, Mail } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
@@ -57,108 +58,63 @@ export default function Navbar() {
   };
 
   return (
-    <>
-      {/* ── LIGHT MODE NAVBAR: frosted white pill ── */}
-      <nav className="
-        fixed left-1/2 -translate-x-1/2 z-50
-        flex items-center gap-1 px-3 py-1.5
-        rounded-2xl
-        bg-white/80 border border-slate-200/70 shadow-sm shadow-slate-200/60
-        backdrop-blur-md
-        top-auto bottom-6 lg:bottom-auto lg:top-6
-        max-w-[95vw] lg:max-w-max
-        transition-all duration-300
-        dark:hidden
-      ">
-        <NavItems
-          activeSection={activeSection}
-          scrollToSection={scrollToSection}
-          theme="light"
-        />
-        <div className="w-px h-5 bg-slate-200 mx-1.5" />
-        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+    <header className="fixed bottom-5 lg:bottom-auto lg:top-5 left-1/2 -translate-x-1/2 z-50 max-w-[95vw]">
+      <nav className="flex items-center gap-1.5 p-1.5 rounded-2xl border border-slate-200/80 dark:border-zinc-800/80 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-xl shadow-2xl shadow-black/10 dark:shadow-black/60 transition-all duration-300">
+        <div className="flex items-center gap-0.5 sm:gap-1">
+          {navItems.map((item) => {
+            const Icon = item.icon;
+            const isActive = activeSection === item.id;
+
+            return (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                id={`nav-link-${item.id}`}
+                className={`relative flex items-center gap-2 px-2.5 sm:px-3 py-2 rounded-xl text-xs font-semibold transition-colors duration-200 cursor-pointer group ${
+                  isActive
+                    ? "text-primary dark:text-accent font-bold"
+                    : "text-slate-500 hover:text-slate-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+                }`}
+              >
+                {/* Active Animated Background Pill */}
+                {isActive && (
+                  <motion.div
+                    layoutId="activeNavBackground"
+                    className="absolute inset-0 rounded-xl bg-slate-100 dark:bg-zinc-800/90 border border-slate-200/80 dark:border-zinc-700/60 shadow-2xs"
+                    transition={{ type: "spring", stiffness: 400, damping: 32 }}
+                  />
+                )}
+
+                <Icon
+                  className={`w-4 h-4 relative z-10 shrink-0 transition-transform duration-200 ${
+                    isActive ? "scale-110" : "group-hover:scale-105"
+                  }`}
+                />
+
+                {/* Label displayed on desktop screens */}
+                <span
+                  className={`relative z-10 hidden lg:inline font-sans text-[12px] tracking-tight transition-opacity duration-200 ${
+                    isActive ? "opacity-100" : "opacity-80 group-hover:opacity-100"
+                  }`}
+                >
+                  {item.label}
+                </span>
+
+                {/* Tooltip for mobile & tablet (opens upward above bottom nav bar) */}
+                <span className="lg:hidden absolute -top-9 left-1/2 -translate-x-1/2 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-150 origin-bottom px-2 py-1 text-[10px] font-medium whitespace-nowrap rounded-lg pointer-events-none shadow-md bg-slate-900 text-white dark:bg-zinc-700 dark:text-zinc-100">
+                  {item.label}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="w-px h-5 bg-slate-200 dark:bg-zinc-800 mx-1 shrink-0" />
+
+        <div className="pr-0.5 shrink-0">
+          <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+        </div>
       </nav>
-
-      {/* ── DARK MODE NAVBAR: rich dark zinc with violet accent ── */}
-      <nav className="
-        fixed left-1/2 -translate-x-1/2 z-50
-        flex items-center gap-1 px-3 py-1.5
-        rounded-2xl
-        bg-zinc-900/95 border border-zinc-700/50 shadow-lg shadow-black/40
-        backdrop-blur-md
-        top-auto bottom-6 lg:bottom-auto lg:top-6
-        max-w-[95vw] lg:max-w-max
-        transition-all duration-300
-        hidden dark:flex
-        ring-1 ring-inset ring-white/[0.04]
-      ">
-        <NavItems
-          activeSection={activeSection}
-          scrollToSection={scrollToSection}
-          theme="dark"
-        />
-        <div className="w-px h-5 bg-zinc-700 mx-1.5" />
-        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-      </nav>
-    </>
-  );
-}
-
-function NavItems({ activeSection, scrollToSection, theme }) {
-  return (
-    <div className="flex items-center gap-0.5">
-      {navItems.map((item) => {
-        const Icon = item.icon;
-        const isActive = activeSection === item.id;
-
-        const lightActive = "bg-slate-100 text-slate-900";
-        const lightInactive = "text-slate-500 hover:text-slate-800 hover:bg-slate-50";
-
-        const darkActive = "bg-violet-500/15 text-violet-300 ring-1 ring-violet-500/30";
-        const darkInactive = "text-zinc-500 hover:text-zinc-200 hover:bg-zinc-800/70";
-
-        return (
-          <button
-            key={item.id}
-            onClick={() => scrollToSection(item.id)}
-            title={item.label}
-            id={`nav-link-${item.id}`}
-            className={`
-              relative flex items-center justify-center
-              w-9 h-9 rounded-xl
-              transition-all duration-200 cursor-pointer group
-              ${theme === "dark"
-                ? isActive ? darkActive : darkInactive
-                : isActive ? lightActive : lightInactive
-              }
-            `}
-          >
-            <Icon className="w-[18px] h-[18px]" />
-
-            {/* Active indicator dot */}
-            {isActive && (
-              <span className={`
-                absolute -bottom-0.5 left-1/2 -translate-x-1/2
-                w-1 h-1 rounded-full
-                ${theme === "dark" ? "bg-violet-400" : "bg-slate-700"}
-              `} />
-            )}
-
-            {/* Tooltip */}
-            <span className="
-              hidden lg:block
-              absolute -top-9 left-1/2 -translate-x-1/2
-              scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100
-              transition-all duration-150 origin-bottom
-              px-2 py-1 text-[11px] font-medium whitespace-nowrap rounded-lg
-              pointer-events-none shadow-md
-              bg-slate-900 text-white dark:bg-zinc-700 dark:text-zinc-100
-            ">
-              {item.label}
-            </span>
-          </button>
-        );
-      })}
-    </div>
+    </header>
   );
 }

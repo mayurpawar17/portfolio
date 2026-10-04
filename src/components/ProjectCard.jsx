@@ -68,22 +68,6 @@ export default function ProjectCard({ title, date, desc, image, tags, tech, achi
                   ))}
                 </div>
               )}
-
-              {achievements && achievements.length > 0 && (
-                <div className="border-t border-slate-100 dark:border-zinc-800/60 pt-4">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400 dark:text-zinc-500 mb-2">
-                    Project Impact
-                  </p>
-                  <ul className="flex flex-col gap-1.5">
-                    {achievements.map((ach, i) => (
-                      <li key={i} className="flex items-start gap-2 text-xs text-slate-600 dark:text-zinc-400">
-                        <span className="w-1 h-1 rounded-full bg-primary dark:bg-accent shrink-0 mt-1.5" />
-                        {ach}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
             </div>
 
             <div className="flex gap-2.5 border-t border-slate-100 dark:border-zinc-800/60 pt-4 mt-4">
@@ -91,7 +75,6 @@ export default function ProjectCard({ title, date, desc, image, tags, tech, achi
                 if (!tag.link) return null;
                 const isGithub = tag.name.toLowerCase() === "github";
                 const isPlayStore = tag.name.toLowerCase() === "play store";
-                const Icon = isGithub ? Github : isPlayStore ? Play : ExternalLink;
                 return (
                   <a
                     key={i}
@@ -101,10 +84,16 @@ export default function ProjectCard({ title, date, desc, image, tags, tech, achi
                     className={`flex-1 flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-[11px] font-semibold transition-all duration-200 hover:-translate-y-0.5 ${
                       isGithub
                         ? "border border-slate-200 dark:border-zinc-800 bg-white/40 dark:bg-zinc-900/40 hover:bg-slate-50 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-300"
-                        : "bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm"
+                        : "bg-primary hover:bg-primary/90 text-primary-foreground shadow-xs"
                     }`}
                   >
-                    <Icon className="w-3 h-3" />
+                    {isGithub ? (
+                      <Github className="w-3.5 h-3.5" />
+                    ) : isPlayStore ? (
+                      <i className="devicon-google-plain text-xs" />
+                    ) : (
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    )}
                     {tag.name}
                   </a>
                 );
@@ -174,7 +163,6 @@ export default function ProjectCard({ title, date, desc, image, tags, tech, achi
                 if (!tag.link) return null;
                 const isGithub = tag.name.toLowerCase() === "github";
                 const isPlayStore = tag.name.toLowerCase() === "play store";
-                const Icon = isGithub ? Github : isPlayStore ? Play : ExternalLink;
                 return (
                   <a
                     key={i}
@@ -184,10 +172,16 @@ export default function ProjectCard({ title, date, desc, image, tags, tech, achi
                     className={`flex-1 flex items-center justify-center gap-1.5 py-1.5 px-2.5 rounded-xl text-[10px] font-semibold transition-all duration-200 hover:-translate-y-0.5 ${
                       isGithub
                         ? "border border-slate-200 dark:border-zinc-800 bg-white/40 dark:bg-zinc-900/40 hover:bg-slate-50 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-300"
-                        : "bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm"
+                        : "bg-primary hover:bg-primary/90 text-primary-foreground shadow-xs"
                     }`}
                   >
-                    <Icon className="w-3 h-3" />
+                    {isGithub ? (
+                      <Github className="w-3 h-3" />
+                    ) : isPlayStore ? (
+                      <i className="devicon-google-plain text-[11px]" />
+                    ) : (
+                      <ExternalLink className="w-3 h-3" />
+                    )}
                     {tag.name}
                   </a>
                 );

@@ -148,14 +148,7 @@ export default function Footer() {
 
       <div className="max-w-6xl w-full mx-auto border-t border-slate-200/60 dark:border-zinc-800/60 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 dark:text-zinc-500">
         <div>
-          © {currentYear} Mayur Pawar. Designed & Built with excellence.
-        </div>
-        <div className="flex items-center gap-3">
-          <span>React.js</span>
-          <span>·</span>
-          <span>Tailwind v4</span>
-          <span>·</span>
-          <span>Netlify</span>
+          © {currentYear} Mayur Pawar. All rights reserved.
         </div>
       </div>
     </footer>

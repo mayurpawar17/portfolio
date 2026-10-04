@@ -13,16 +13,10 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-12 md:py-16 relative overflow-hidden px-6 lg:px-8 bg-background text-foreground">
-      {/* Background Blob */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/5 dark:bg-primary/5 rounded-full glow-blob pointer-events-none" />
-
       <div className="max-w-4xl w-full mx-auto relative z-10">
         {/* Section Heading */}
         <div className="text-center mb-10">
-          <span className="text-primary dark:text-accent font-semibold tracking-wider uppercase text-sm bg-primary/5 dark:bg-primary/10 px-3 py-1.5 rounded-full">
-            Contact Me
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-slate-900 dark:text-zinc-50 mt-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight font-display text-slate-900 dark:text-zinc-50">
             Get In Touch
           </h2>
           <p className="text-slate-500 dark:text-zinc-400 mt-3 max-w-xl mx-auto text-sm sm:text-base">
