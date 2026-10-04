@@ -60,9 +60,9 @@ export default function App() {
       <main className="flex-1 w-full flex flex-col">
         <Hero />
         <About />
+        <Experience />
         <Skills />
         <Projects />
-        <Experience />
         <Certifications />
         <Contact />
       </main>

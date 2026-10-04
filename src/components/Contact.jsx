@@ -12,13 +12,13 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 relative overflow-hidden px-6 lg:px-8 bg-background text-foreground">
+    <section id="contact" className="py-12 md:py-16 relative overflow-hidden px-6 lg:px-8 bg-background text-foreground">
       {/* Background Blob */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/5 dark:bg-primary/5 rounded-full glow-blob pointer-events-none" />
 
       <div className="max-w-4xl w-full mx-auto relative z-10">
         {/* Section Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <span className="text-primary dark:text-accent font-semibold tracking-wider uppercase text-sm bg-primary/5 dark:bg-primary/10 px-3 py-1.5 rounded-full">
             Contact Me
           </span>

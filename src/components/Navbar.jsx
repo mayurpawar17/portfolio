@@ -5,9 +5,9 @@ import ThemeToggle from "./ThemeToggle";
 const navItems = [
   { id: "home", label: "Home", icon: Home },
   { id: "about", label: "About", icon: User },
+  { id: "experience", label: "Experience", icon: History },
   { id: "skills", label: "Skills", icon: Code },
   { id: "projects", label: "Projects", icon: Folder },
-  { id: "experience", label: "Experience", icon: History },
   { id: "certifications", label: "Certifications", icon: Award },
   { id: "contact", label: "Contact", icon: Mail },
 ];

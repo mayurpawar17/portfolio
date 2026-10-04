@@ -52,13 +52,13 @@ export default function Experience() {
   };
 
   return (
-    <section id="experience" className="py-24 md:py-32 bg-slate-50/50 dark:bg-zinc-950/20 relative overflow-hidden px-6 lg:px-8">
+    <section id="experience" className="py-12 md:py-16 bg-slate-50/50 dark:bg-zinc-950/20 relative overflow-hidden px-6 lg:px-8">
       {/* Decorative Blob */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-80 h-80 bg-primary/5 dark:bg-primary/5 rounded-full glow-blob pointer-events-none" />
 
       <div className="max-w-6xl w-full mx-auto relative z-10">
         {/* Section Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <span className="text-primary dark:text-accent font-semibold tracking-wider uppercase text-sm bg-primary/5 dark:bg-primary/10 px-3 py-1.5 rounded-full">
             Experience
           </span>

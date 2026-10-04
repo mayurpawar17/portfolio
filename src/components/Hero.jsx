@@ -33,7 +33,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[85vh] md:min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden px-6 lg:px-8 bg-background text-foreground"
+      className="relative min-h-[75vh] md:min-h-[85vh] flex items-center justify-center pt-24 pb-10 overflow-hidden px-6 lg:px-8 bg-background text-foreground"
     >
       {/* Premium Minimal Blur Blobs */}
       <div className="absolute inset-0 pointer-events-none z-0">

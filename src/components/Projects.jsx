@@ -73,13 +73,13 @@ const projectsData = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 md:py-32 relative overflow-hidden px-6 lg:px-8 bg-background text-foreground">
+    <section id="projects" className="py-12 md:py-16 relative overflow-hidden px-6 lg:px-8 bg-background text-foreground">
       {/* Decorative Blob */}
       <div className="absolute top-0 left-0 w-80 h-80 bg-accent/5 dark:bg-accent/5 rounded-full glow-blob pointer-events-none" />
 
       <div className="max-w-6xl w-full mx-auto relative z-10">
         {/* Section Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <span className="text-primary dark:text-accent font-semibold tracking-wider uppercase text-xs bg-primary/5 dark:bg-primary/10 px-3 py-1 rounded-full">
             Projects
           </span>
