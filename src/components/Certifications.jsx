@@ -7,7 +7,7 @@ const certificationsData = [
     issuer: "Google Play Console",
     date: "Jun 2024",
     credentialId: "BMI FitIndex Pro Live",
-    link: "https://play.google.com/store/apps/details?id=com.devmayur.bmi_fitindex_pro",
+    link: "https://play.google.com/store/apps/developer?id=Mayur+Pawar",
     badge: "App Deployment"
   },
   {

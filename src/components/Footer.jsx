@@ -124,7 +124,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.devmayur.bmi_fitindex_pro"
+                  href="https://play.google.com/store/apps/developer?id=Mayur+Pawar"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 text-slate-500 hover:text-primary dark:text-zinc-400 dark:hover:text-accent transition-colors duration-150"

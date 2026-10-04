@@ -11,8 +11,10 @@ const skillsData = [
       { name: "Flutter", icon: "devicon-flutter-plain colored" },
       { name: "Dart", icon: "devicon-dart-plain colored" },
       { name: "Java", icon: "devicon-java-plain colored" },
-      { name: "Kotlin", icon: "devicon-kotlin-plain colored" },
-      { name: "Android Studio", icon: "devicon-android-plain colored" }
+      { name: "Android Studio", icon: "devicon-android-plain colored" },
+      { name: "Xcode", icon: "devicon-xcode-plain colored" },
+      { name: "Google Play Store", icon: "devicon-google-plain colored" },
+      { name: "Apple App Store", icon: "devicon-apple-original colored" }
     ]
   },
   {
@@ -25,8 +27,7 @@ const skillsData = [
       { name: "JavaScript", icon: "devicon-javascript-plain colored" },
       { name: "HTML5", icon: "devicon-html5-plain colored" },
       { name: "CSS3", icon: "devicon-css3-plain colored" },
-      { name: "Tailwind CSS", icon: "devicon-tailwindcss-original colored" },
-      { name: "Figma", icon: "devicon-figma-plain colored" }
+      { name: "Tailwind CSS", icon: "devicon-tailwindcss-original colored" }
     ]
   },
   {
@@ -35,9 +36,9 @@ const skillsData = [
     color: "from-orange-500/10 to-amber-500/10 text-orange-600 dark:text-orange-400 border-orange-500/20",
     status: "System Architecture",
     skills: [
-      { name: "Spring Boot", icon: "devicon-spring-original colored" },
-      { name: "Spring Data JPA", icon: "devicon-spring-original colored" },
-      { name: "Spring Security", icon: "devicon-spring-original colored" },
+      { name: "Python", icon: "devicon-python-plain colored" },
+      { name: "FastAPI", icon: "devicon-fastapi-plain colored" },
+      { name: "Pydantic", icon: null },
       { name: "Microservices", icon: null },
       { name: "RESTful APIs", icon: null }
     ]
@@ -52,7 +53,7 @@ const skillsData = [
       { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
       { name: "Supabase DB", icon: "devicon-supabase-plain colored" },
       { name: "Firebase Firestore", icon: "devicon-firebase-plain colored" },
-      { name: "Prisma ORM", icon: "devicon-prisma-original colored" }
+      { name: "SQLModel", icon: null }
     ]
   },
   {
@@ -63,8 +64,7 @@ const skillsData = [
     skills: [
       { name: "Netlify", icon: "devicon-netlify-plain colored" },
       { name: "Vercel", icon: "devicon-vercel-original colored" },
-      { name: "Firebase Hosting", icon: "devicon-firebase-plain colored" },
-      { name: "AWS basics", icon: "devicon-amazonwebservices-original colored" }
+      { name: "AWS (EC2)", icon: "devicon-amazonwebservices-plain colored" }
     ]
   },
   {
@@ -73,11 +73,11 @@ const skillsData = [
     color: "from-slate-500/10 to-zinc-500/10 text-slate-600 dark:text-zinc-400 border-slate-500/20",
     status: "Version & Env",
     skills: [
+      { name: "Figma", icon: "devicon-figma-plain colored" },
       { name: "Docker", icon: "devicon-docker-plain colored" },
       { name: "Git & GitHub", icon: "devicon-git-plain colored" },
       { name: "GitHub Actions", icon: "devicon-github-original colored" },
-      { name: "Postman", icon: "devicon-postman-plain colored" },
-      { name: "CLI Shell", icon: "devicon-bash-plain colored" }
+      { name: "Postman", icon: "devicon-postman-plain colored" }
     ]
   }
 ];
