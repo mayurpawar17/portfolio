@@ -21,7 +21,7 @@ Welcome to my professional portfolio! ✨ This repository showcases my work, ski
 - **Backend**: Node.js, Express (if applicable)
 - **Deployment**: Netlify
 
-Netlify builds this project with `npm run build` and publishes the generated `dist` directory. The `netlify.toml` file also configures the SPA fallback for client-side routes.
+Netlify builds this project with `npm run build`, which checks TypeScript before compiling the app. Nitro uses its Netlify preset to deploy server-rendered routes as Netlify functions and publishes static assets from `dist`.
 
 ## 💻 Running the Project Offline
 
