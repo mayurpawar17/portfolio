@@ -1,5 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getProject } from "@/lib/projects";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export const Route = createFileRoute("/work/$appId")({
   loader: ({ params }) => {
@@ -34,9 +35,12 @@ function AppDetail() {
           <Link to="/" className="font-mono text-sm font-medium">
             Mayur Pawar
           </Link>
-          <Link to="/" hash="work" className="rounded-full border border-border px-4 py-2 text-sm font-medium hover:bg-accent">
-            ← All work
-          </Link>
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <Link to="/" hash="work" className="rounded-full border border-border px-4 py-2 text-sm font-medium hover:bg-accent">
+              ← All work
+            </Link>
+          </div>
         </nav>
       </header>
 
