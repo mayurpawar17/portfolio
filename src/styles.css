@@ -141,7 +141,7 @@
 body { font-family: var(--font-display); }
 @utility bg-glow { background-image: var(--glow); }
 @utility phone {
-  border: 10px solid var(--secondary); border-radius: 2.5rem; aspect-ratio: 9/19.5;
+  border: 10px solid var(--secondary); border-radius: 0.5rem; aspect-ratio: 9/19.5;
   box-shadow: 0 30px 60px -20px color-mix(in oklab, var(--primary) 35%, transparent), inset 0 0 0 1px var(--border);
   overflow: hidden; position: relative; background: var(--muted);
 }

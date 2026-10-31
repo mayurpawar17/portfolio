@@ -44,6 +44,10 @@ Open the local URL printed by Vite.
 - `src/styles.css` — global styles and Tailwind CSS
 - `netlify.toml` — Netlify build and Nitro preset configuration
 
+## Work section images
+
+Use portrait images with an **860 × 1920 px** aspect ratio (about **9:20**) for project screenshots. This matches the phone frame and helps avoid cropping. Larger images with the same ratio, such as **1080 × 2411 px**, also work.
+
 ## Deploy to Netlify
 
 Connect the GitHub repository to Netlify and deploy the production branch. The checked-in `netlify.toml` configures:
