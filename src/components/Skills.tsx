@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { Smartphone, Code, Server, Database, Cloud, Cpu, Layers } from "lucide-react";
+import { motion, type Variants } from "framer-motion";
+import { Smartphone, Code, Server, Database, Cloud, Cpu } from "lucide-react";
 
 const skillsData = [
   {
@@ -77,7 +77,7 @@ const skillsData = [
 ];
 
 export default function Skills() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -85,7 +85,7 @@ export default function Skills() {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,

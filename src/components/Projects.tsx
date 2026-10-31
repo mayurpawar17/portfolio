@@ -93,7 +93,6 @@ export default function Projects() {
               image={project.image}
               tags={project.tags}
               tech={project.tech}
-              achievements={project.achievements}
               colSpan={project.colSpan}
             />
           ))}

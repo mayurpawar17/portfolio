@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Award, Calendar, ShieldCheck, ExternalLink } from "lucide-react";
 
 const certificationsData = [
@@ -29,7 +29,7 @@ const certificationsData = [
 ];
 
 export default function Certifications() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -37,7 +37,7 @@ export default function Certifications() {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { y: 30, opacity: 0 },
     visible: {
       y: 0,

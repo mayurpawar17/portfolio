@@ -1,7 +1,30 @@
 import { motion } from "framer-motion";
-import { Github, ExternalLink, Play, ArrowUpRight } from "lucide-react";
+import { Github, ExternalLink, ArrowUpRight } from "lucide-react";
 
-export default function ProjectCard({ title, date, desc, image, tags, tech, achievements, colSpan }) {
+interface ProjectLink {
+  name: string;
+  link?: string;
+}
+
+interface ProjectCardProps {
+  title: string;
+  date: string;
+  desc: string;
+  image: string;
+  tags: ProjectLink[];
+  tech: string[];
+  colSpan?: string;
+}
+
+export default function ProjectCard({
+  title,
+  date,
+  desc,
+  image,
+  tags,
+  tech,
+  colSpan,
+}: ProjectCardProps) {
   const isWide = colSpan && colSpan.includes("col-span-8");
 
   return (

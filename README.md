@@ -17,9 +17,11 @@ Welcome to my professional portfolio! ✨ This repository showcases my work, ski
 
 ## ⚙️ Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript, React, Tailwind CSS
+- **Frontend**: HTML, CSS, TypeScript, React, Tailwind CSS
 - **Backend**: Node.js, Express (if applicable)
 - **Deployment**: Netlify
+
+Netlify builds this project with `npm run build` and publishes the generated `dist` directory. The `netlify.toml` file also configures the SPA fallback for client-side routes.
 
 ## 💻 Running the Project Offline
 

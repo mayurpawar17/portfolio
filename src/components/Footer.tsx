@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, FileText, Globe } from "lucide-react";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });

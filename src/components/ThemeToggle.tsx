@@ -2,9 +2,17 @@ import { useState } from "react";
 import { Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function ThemeToggle({ theme: propTheme, toggleTheme: propToggleTheme }) {
+interface ThemeToggleProps {
+  theme?: "light" | "dark";
+  toggleTheme?: () => void;
+}
+
+export default function ThemeToggle({
+  theme: propTheme,
+  toggleTheme: propToggleTheme,
+}: ThemeToggleProps) {
   // Lazily read current theme from DOM so remounts (e.g. navbar swap) are instant
-  const [localTheme, setLocalTheme] = useState(() =>
+  const [localTheme, setLocalTheme] = useState<"light" | "dark">(() =>
     typeof document !== "undefined" &&
     document.documentElement.classList.contains("dark")
       ? "dark"

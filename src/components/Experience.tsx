@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { Briefcase, Calendar, MapPin } from "lucide-react";
+import { motion, type Variants } from "framer-motion";
+import { Calendar, MapPin } from "lucide-react";
 import kapilItSolutions from "../assets/kapil_it_solutions.png";
 
 const experienceData = [
@@ -34,7 +34,7 @@ const experienceData = [
 ];
 
 export default function Experience() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -42,7 +42,7 @@ export default function Experience() {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { y: 30, opacity: 0 },
     visible: {
       y: 0,

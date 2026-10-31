@@ -15,7 +15,7 @@ const navItems = [
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
-  const [theme, setTheme] = useState(() =>
+  const [theme, setTheme] = useState<"light" | "dark">(() =>
     typeof document !== "undefined" &&
     document.documentElement.classList.contains("dark")
       ? "dark"
@@ -52,7 +52,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
