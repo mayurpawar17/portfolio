@@ -1,72 +1,61 @@
-# 🚀 Portfolio 
+# Portfolio
 
-## 🌟 Overview
+A responsive portfolio website built with React, TypeScript, and TanStack Start. It presents a developer profile, skills, experience, education, and mobile app projects, with a separate case-study page for each project.
 
-Welcome to my professional portfolio! ✨ This repository showcases my work, skills, and projects as a **Web Developer** 💻. It serves as both a demonstration of my capabilities and a central hub for potential employers or collaborators to explore my work.
+## Live site
 
-## 🔗 Live Demo
+[mayurpawar.netlify.app](https://mayurpawar.netlify.app/)
 
-🌐 [https://mayurpawar.netlify.app/]
+## Tech stack
 
-## 🎯 Features
+- React 19 and TypeScript
+- TanStack Start and TanStack Router
+- Tailwind CSS 4
+- Vite and Nitro
+- Netlify Functions for server-rendered routes
 
-- 📱 Responsive design that works on all devices
-- 🖼️ Project showcase section 
-- 👨‍💻 About me section with skills and experience
-- 📧 Contact form or information
+## Run locally
 
-## ⚙️ Technologies Used
+Use a current Node.js LTS release.
 
-- **Frontend**: HTML, CSS, TypeScript, React, Tailwind CSS
-- **Backend**: Node.js, Express (if applicable)
-- **Deployment**: Netlify
+```bash
+npm ci
+npm run dev
+```
 
-Netlify builds this project with `npm run build`, which checks TypeScript before compiling the app. Nitro uses its Netlify preset to deploy server-rendered routes as Netlify functions and publishes static assets from `dist`.
+Open the local URL printed by Vite.
 
-## 💻 Running the Project Offline
+## Scripts
 
-Follow these steps to set up and run the project locally on your machine without requiring an active internet connection (after initial dependency installation):
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Type-check the project and create a production build |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Run ESLint |
+| `npm test` | Run the Vitest test suite |
+| `npm run test:watch` | Run Vitest in watch mode |
 
-### 📋 Prerequisites
+## Project structure
 
-- **Node.js**: v18.0.0 or higher recommended
-- **npm**: (included with Node.js) or `yarn` / `pnpm`
+- `src/routes/` — home page and dynamic project case-study routes
+- `src/lib/projects.ts` — project details displayed by the portfolio
+- `src/components/ui/` — reusable UI components
+- `src/styles.css` — global styles and Tailwind CSS
+- `netlify.toml` — Netlify build and Nitro preset configuration
 
-### 🚀 Quick Start Guide
+## Deploy to Netlify
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/mayurpawar17/portfolio.git
-   cd portfolio
-   ```
+Connect the GitHub repository to Netlify and deploy the production branch. The checked-in `netlify.toml` configures:
 
-2. **Install Dependencies** *(One-time step requiring internet connection)*
-   ```bash
-   npm install
-   ```
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Nitro preset: `netlify`
 
-3. **Run Development Server (Offline)**
-   ```bash
-   npm run dev
-   ```
-   Open your browser at `http://localhost:5173` (or the port displayed in terminal). Vite's dev server runs entirely on your local machine and works offline.
+The build produces static assets in `dist` and a Netlify Function for server-rendered routes. No separate SPA fallback redirect is needed.
 
-4. **Build & Preview Production Build Offline**
-   - **Create production build**:
-     ```bash
-     npm run build
-     ```
-   - **Preview local production build**:
-     ```bash
-     npm run preview
-     ```
+## Contact
 
-## 📬 Contact
-
-- 📧 Email: [mayurpawar4908@gmail.com]
-- 💼 LinkedIn: [https://www.linkedin.com/in/mayurpawar17]
-- 🐙 GitHub: [https://github.com/mayurpawar17]
-
----
-
-✨ Thanks for visiting! Let's connect and build something amazing together! 🚀
+- Email: [mayurpawar4908@gmail.com](mailto:mayurpawar4908@gmail.com)
+- LinkedIn: [mayurpawar17](https://www.linkedin.com/in/mayurpawar17)
+- GitHub: [mayurpawar17](https://github.com/mayurpawar17)
