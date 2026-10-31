@@ -4,9 +4,9 @@ import { mobileProjects } from "@/lib/projects";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Alex Morgan — Full Stack Software Engineer" },
-      { name: "description", content: "Portfolio of Alex Morgan, a full stack engineer building web platforms and mobile apps." },
-      { property: "og:title", content: "Alex Morgan — Full Stack Software Engineer" },
+      { title: "Mayur Pawar — Software Engineer" },
+      { name: "description", content: "Portfolio of Mayur Pawar, a software engineer building mobile apps and web applications." },
+      { property: "og:title", content: "Mayur Pawar — Software Engineer" },
       { property: "og:description", content: "Web platforms, APIs and mobile apps crafted end to end." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -42,7 +42,7 @@ function Index() {
     <div className="min-h-screen">
       <header className="sticky top-0 z-20 border-b border-border bg-background/80 backdrop-blur">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-          <a href="#top" className="font-mono text-sm font-medium">alex<span className="text-primary">.dev</span></a>
+          <a href="#top" className="font-mono text-sm font-medium">Mayur Pawar</a>
           <div className="hidden gap-8 text-sm text-muted-foreground sm:flex">
             <a href="#work" className="hover:text-foreground">Work</a>
             <a href="#skills" className="hover:text-foreground">Skills</a>
@@ -161,16 +161,15 @@ function Index() {
         <div className="mx-auto max-w-6xl px-5 py-24 text-center">
           <h2 className="text-4xl font-semibold md:text-6xl">Let's build something <span className="text-primary">great</span>.</h2>
           <p className="mx-auto mt-4 max-w-md text-muted-foreground">Open to full-time roles and freelance collaborations.</p>
-          <a href="mailto:hello@alex.dev" className="mt-10 inline-block rounded-full bg-primary px-8 py-4 font-medium text-primary-foreground">hello@alex.dev</a>
+          <a href="mailto:mayurpawar4908@gmail.com" className="mt-10 inline-block rounded-full bg-primary px-8 py-4 font-medium text-primary-foreground">mayurpawar4908@gmail.com</a>
           <div className="mt-8 flex justify-center gap-6 font-mono text-sm text-muted-foreground">
-            <a href="https://github.com" className="hover:text-primary">GitHub</a>
-            <a href="https://linkedin.com" className="hover:text-primary">LinkedIn</a>
-            <a href="https://x.com" className="hover:text-primary">X</a>
+            <a href="https://github.com/mayurpawar17" className="hover:text-primary">GitHub</a>
+            <a href="https://www.linkedin.com/in/mayurpawar17" className="hover:text-primary">LinkedIn</a>
           </div>
         </div>
       </section>
 
-      <footer className="border-t border-border py-8 text-center font-mono text-xs text-muted-foreground">© 2026 Alex Morgan</footer>
+      <footer className="border-t border-border py-8 text-center font-mono text-xs text-muted-foreground">© 2026 Mayur Pawar</footer>
     </div>
   );
 }

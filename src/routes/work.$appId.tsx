@@ -9,9 +9,9 @@ export const Route = createFileRoute("/work/$appId")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: `${loaderData?.title ?? "App"} — Alex Morgan` },
+      { title: `${loaderData?.title ?? "App"} — Mayur Pawar` },
       { name: "description", content: loaderData?.desc ?? "Mobile app case study." },
-      { property: "og:title", content: `${loaderData?.title ?? "App"} — Alex Morgan` },
+      { property: "og:title", content: `${loaderData?.title ?? "App"} — Mayur Pawar` },
       { property: "og:description", content: loaderData?.desc ?? "Mobile app case study." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -32,7 +32,7 @@ function AppDetail() {
       <header className="sticky top-0 z-20 border-b border-border bg-background/80 backdrop-blur">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
           <Link to="/" className="font-mono text-sm font-medium">
-            alex<span className="text-primary">.dev</span>
+            Mayur Pawar
           </Link>
           <Link to="/" hash="work" className="rounded-full border border-border px-4 py-2 text-sm font-medium hover:bg-accent">
             ← All work
@@ -99,11 +99,11 @@ function AppDetail() {
       <section className="border-t border-border bg-card/40">
         <div className="mx-auto max-w-6xl px-5 py-16 text-center">
           <h2 className="text-2xl font-semibold">Want an app like this?</h2>
-          <a href="mailto:hello@alex.dev" className="mt-6 inline-block rounded-full bg-primary px-8 py-4 font-medium text-primary-foreground">Get in touch</a>
+          <a href="mailto:mayurpawar4908@gmail.com" className="mt-6 inline-block rounded-full bg-primary px-8 py-4 font-medium text-primary-foreground">Get in touch</a>
         </div>
       </section>
 
-      <footer className="border-t border-border py-8 text-center font-mono text-xs text-muted-foreground">© 2026 Alex Morgan</footer>
+      <footer className="border-t border-border py-8 text-center font-mono text-xs text-muted-foreground">© 2026 Mayur Pawar</footer>
     </div>
   );
 }
