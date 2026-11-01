@@ -71,7 +71,7 @@ function Index() {
             <a href="#contact" className="rounded-full border border-border px-6 py-3 font-medium hover:bg-accent">Get in touch</a>
           </div>
           <dl className="mt-16 grid max-w-lg grid-cols-3 gap-6">
-            {[["7+", "Years"], ["40+", "Projects"], ["12", "Apps shipped"]].map(([n, l]) => (
+            {[["1.5+", "Years"], ["4", "Projects"], ["3", "Apps shipped"]].map(([n, l]) => (
               <div key={l}><dt className="text-3xl font-semibold">{n}</dt><dd className="font-mono text-xs text-muted-foreground">{l}</dd></div>
             ))}
           </dl>
