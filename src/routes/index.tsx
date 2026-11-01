@@ -43,7 +43,7 @@ function Chip({ children }: { children: string }) {
 
 function Index() {
   return (
-    <div className="min-h-screen">
+    <div className="page-enter min-h-screen">
       <header className="sticky top-0 z-20 border-b border-border bg-background/80 backdrop-blur">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
           <a href="#top" className="font-mono text-sm font-medium">Mayur Pawar</a>
