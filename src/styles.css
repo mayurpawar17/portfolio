@@ -175,3 +175,7 @@ body { font-family: var(--font-display); }
   box-shadow: 0 30px 60px -20px color-mix(in oklab, var(--primary) 35%, transparent), inset 0 0 0 1px var(--border);
   overflow: hidden; position: relative; background: var(--muted);
 }
+.light .phone {
+  border-color: oklch(0.72 0.02 260);
+  box-shadow: 0 24px 48px -20px oklch(0.2 0.02 260 / 35%), inset 0 0 0 1px oklch(0.4 0.02 260 / 20%);
+}

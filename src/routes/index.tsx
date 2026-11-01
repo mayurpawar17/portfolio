@@ -17,10 +17,10 @@ export const Route = createFileRoute("/")({
 });
 
 const skills = {
-  Frontend: ["React", "Next.js", "TypeScript", "Tailwind", "Framer Motion"],
-  Backend: ["Node.js", "Go", "Python", "GraphQL", "REST"],
-  Mobile: ["React Native", "Flutter", "Swift", "Kotlin"],
-  "Data & Cloud": ["PostgreSQL", "Redis", "AWS", "Docker", "Kubernetes"],
+  Frontend: ["React", "Next.js", "TypeScript", "Tailwind"],
+  Backend: ["Python", "FastAPI", "REST APIs", "Pydantic", "SQLAlchemy"],
+  Mobile: ["Flutter", "Dart", "BLoC", "Provider", "Clean Architecture"],
+  "Data & Cloud": ["PostgreSQL", "Redis", "AWS", "Docker", "Kubernetes", "Git", "GitHub Actions"],
 };
 
 const experience = [
