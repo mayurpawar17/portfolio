@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { mobileProjects } from "@/lib/projects";
 import { ThemeToggle } from "@/components/theme-toggle";
+import companyLogo from "@/assets/kapil_it_solutions.png";
+import collegeLogo from "@/assets/shahada_clg.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -157,7 +159,10 @@ function Index() {
           <ul className="mt-8 divide-y divide-border border-y border-border">
             {experience.map((e) => (
               <li key={e.role} className="flex flex-col justify-between gap-1 py-5 sm:flex-row sm:items-center">
-                <div><p className="font-medium">{e.role}</p><p className="text-sm text-muted-foreground">{e.co}</p></div>
+                <div className="flex items-center gap-3">
+                  <img src={companyLogo} alt={`${e.co} logo`} className="size-12 shrink-0 rounded-lg border border-border bg-white p-1 object-contain" />
+                  <div><p className="font-medium">{e.role}</p><p className="text-sm text-muted-foreground">{e.co}</p></div>
+                </div>
                 <span className="font-mono text-xs text-muted-foreground">{e.time}</span>
               </li>
             ))}
@@ -172,7 +177,10 @@ function Index() {
           <ul className="mt-8 divide-y divide-border border-y border-border">
             {education.map((e) => (
               <li key={e.degree} className="flex flex-col justify-between gap-1 py-5 sm:flex-row sm:items-center">
-                <div><p className="font-medium">{e.degree}</p><p className="text-sm text-muted-foreground">{e.school}</p><p className="mt-1 text-xs text-muted-foreground">{e.grade}</p></div>
+                <div className="flex items-center gap-3">
+                  <img src={collegeLogo} alt={`${e.school} logo`} className="size-12 shrink-0 rounded-lg border border-border bg-white p-1 object-contain" />
+                  <div><p className="font-medium">{e.degree}</p><p className="text-sm text-muted-foreground">{e.school}</p><p className="mt-1 text-xs text-muted-foreground">{e.grade}</p></div>
+                </div>
                 <span className="font-mono text-xs text-muted-foreground">{e.time}</span>
               </li>
             ))}
