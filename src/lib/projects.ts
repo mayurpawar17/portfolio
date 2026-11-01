@@ -9,6 +9,8 @@ export type MobileProject = {
   hue: string;
   screen?: string[];
   shot?: string;
+  screenshots?: string[];
+  playStoreUrl?: string;
   overview: string;
   features: string[];
   role: string;
@@ -24,6 +26,8 @@ export const mobileProjects: MobileProject[] = [
     stack: ["Flutter", "Dart"],
     hue: "from-primary/70 to-accent",
     shot: bmiShot,
+    screenshots: [bmiShot, bmiShot, bmiShot],
+    playStoreUrl: "https://play.google.com/store/search?q=BMI%20FitIndex%20Pro&c=apps",
     overview:
       "BMI FitIndex Pro is a fast, privacy-first body mass index calculator for Android. It supports male and female profiles, both metric and imperial units, and presents results with a clean, dark, glanceable interface.",
     features: [

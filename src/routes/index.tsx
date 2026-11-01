@@ -118,6 +118,16 @@ function Index() {
                 </h3>
                 <p className="mt-2 max-w-xs text-sm text-muted-foreground">{p.desc}</p>
                 <div className="mt-4 flex flex-wrap justify-center gap-2">{p.stack.map((s) => <Chip key={s}>{s}</Chip>)}</div>
+                {p.playStoreUrl && (
+                  <a
+                    href={p.playStoreUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-5 rounded-full border border-border px-5 py-2 text-sm font-medium transition hover:border-primary hover:text-primary"
+                  >
+                    View on Play Store
+                  </a>
+                )}
               </article>
             ))}
           </div>
