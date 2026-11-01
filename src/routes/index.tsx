@@ -24,14 +24,17 @@ const skills = {
 };
 
 const experience = [
-  { role: "Senior Software Engineer", co: "Northwind Labs", time: "2023 — Now" },
-  { role: "Full Stack Engineer", co: "Brightpath", time: "2020 — 2023" },
-  { role: "Software Engineer", co: "Freelance", time: "2018 — 2020" },
+  { role: "Software Engineer", co: "Kapil IT Solutions", time: "Dec 2025 — Present" },
+  { role: "Flutter Developer Intern", co: "Kapil IT Solutions", time: "Jun 2025 — Nov 2025" },
 ];
 
 const education = [
-  { degree: "B.E. Computer Engineering", school: "Pune Institute of Technology", time: "2014 — 2018" },
-  { degree: "M.S. Software Engineering", school: "Georgia Institute of Technology", time: "2018 — 2020" },
+  {
+    degree: "Bachelor's Degree in Computer Engineering",
+    school: "P.S.G.V.P. Mandal’s D.N. Patel College of Engineering, Shahada",
+    time: "2021 — 2024",
+    grade: "CGPA: 8.16 / 10",
+  },
 ];
 
 function Chip({ children }: { children: string }) {
@@ -153,7 +156,7 @@ function Index() {
           <ul className="mt-8 divide-y divide-border border-y border-border">
             {education.map((e) => (
               <li key={e.degree} className="flex flex-col justify-between gap-1 py-5 sm:flex-row sm:items-center">
-                <div><p className="font-medium">{e.degree}</p><p className="text-sm text-muted-foreground">{e.school}</p></div>
+                <div><p className="font-medium">{e.degree}</p><p className="text-sm text-muted-foreground">{e.school}</p><p className="mt-1 text-xs text-muted-foreground">{e.grade}</p></div>
                 <span className="font-mono text-xs text-muted-foreground">{e.time}</span>
               </li>
             ))}
