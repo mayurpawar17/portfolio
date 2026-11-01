@@ -91,11 +91,17 @@ function Index() {
                 <Link
                   to="/work/$appId"
                   params={{ appId: p.slug }}
-                  className={`phone block transition hover:-translate-y-2 ${p.shot ? "w-72" : "w-56"}`}
+                  className="phone block w-56 transition hover:-translate-y-2"
                   style={p.shot ? { aspectRatio: "860 / 1920" } : undefined}
                 >
                   {p.shot ? (
-                    <img src={p.shot} alt={`${p.title} app screen`} className="h-full w-full rounded-[inherit] object-cover object-top" />
+                    <img
+                      src={p.shot}
+                      alt={`${p.title} app screen`}
+                      width={860}
+                      height={1920}
+                      className="h-full w-full rounded-[inherit] object-cover object-top"
+                    />
                   ) : (
                   <div className={`flex h-full flex-col bg-gradient-to-b ${p.hue} px-4 pt-8`}>
                     <p className="text-left text-xs text-foreground/70">{p.title}</p>

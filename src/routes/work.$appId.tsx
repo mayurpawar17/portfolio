@@ -52,6 +52,16 @@ function AppDetail() {
           <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-6xl">{p.title}</h1>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">{p.desc}</p>
           <div className="mt-6 flex flex-wrap gap-2">{p.stack.map((s) => <Chip key={s}>{s}</Chip>)}</div>
+          {p.playStoreUrl && (
+            <a
+              href={p.playStoreUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-8 inline-flex rounded-full bg-primary px-6 py-3 font-medium text-primary-foreground transition hover:bg-primary/90"
+            >
+              Get it on Google Play
+            </a>
+          )}
         </div>
       </section>
 
@@ -69,6 +79,8 @@ function AppDetail() {
                 <img
                   src={screenshots[index % screenshots.length]}
                   alt={`${p.title} screen preview ${index + 1}${index > 0 ? " (mock)" : ""}`}
+                  width={860}
+                  height={1920}
                   className="h-full w-full rounded-[inherit] object-cover object-top"
                 />
               ) : (

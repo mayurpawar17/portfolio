@@ -1,4 +1,4 @@
-import bmiShot from "@/assets/bmi-fitindex-pro.webp";
+import bmiShot from "@/assets/bmi1.png";
 
 export type MobileProject = {
   slug: string;

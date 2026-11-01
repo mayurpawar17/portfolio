@@ -46,7 +46,7 @@ Open the local URL printed by Vite.
 
 ## Work section images
 
-Use portrait images with an **860 × 1920 px** aspect ratio (about **9:20**) for project screenshots. This matches the phone frame and helps avoid cropping. Larger images with the same ratio, such as **1080 × 2411 px**, also work.
+Use project screenshots with a width of **860 px** and a height of **1920 px**. Larger screenshots, such as **1080 × 2411 px**, also work.
 
 ## Deploy to Netlify
 
