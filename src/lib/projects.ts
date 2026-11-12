@@ -1,4 +1,8 @@
 import bmiShot from "@/assets/bmi1.png";
+import vocabularHomePage from "@/assets/vocabular/vocabularHomePage.jpeg";
+import vocabularPracticePage from "@/assets/vocabular/vocabularPracticePage.jpeg";
+import vocabularSearchPage from "@/assets/vocabular/vocabularSearchPage.jpeg";
+import vocabularSplashPage from "@/assets/vocabular/vocabularSplashPage.jpeg";
 
 export type MobileProject = {
   slug: string;
@@ -47,7 +51,8 @@ export const mobileProjects: MobileProject[] = [
     desc: "Workout tracker with offline sync and wearable integration.",
     stack: ["React Native", "Firebase"],
     hue: "from-primary/70 to-accent",
-    screen: ["Today", "4,820 kcal", "Run · 5.2 km", "Strength · 45m"],
+    shot: vocabularSplashPage,
+    screenshots: [vocabularHomePage, vocabularSearchPage, vocabularPracticePage],
     overview:
       "Pulse Fit is a cross-platform workout tracker that keeps logging even without a connection. Sessions sync automatically when you're back online, and wearable data flows in from popular fitness devices.",
     features: [

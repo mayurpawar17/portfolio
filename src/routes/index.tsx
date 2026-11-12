@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Github, Linkedin } from "lucide-react";
 import { mobileProjects } from "@/lib/projects";
 import { ThemeToggle } from "@/components/theme-toggle";
 import companyLogo from "@/assets/kapil_it_solutions.png";
@@ -193,9 +194,27 @@ function Index() {
           <h2 className="text-4xl font-semibold md:text-6xl">Let's build something <span className="text-primary">great</span>.</h2>
           <p className="mx-auto mt-4 max-w-md text-muted-foreground">Open to full-time roles and freelance collaborations.</p>
           <a href="mailto:mayurpawar4908@gmail.com" className="mt-10 inline-block rounded-full bg-primary px-8 py-4 font-medium text-primary-foreground">mayurpawar4908@gmail.com</a>
-          <div className="mt-8 flex justify-center gap-6 font-mono text-sm text-muted-foreground">
-            <a href="https://github.com/mayurpawar17" className="hover:text-primary">GitHub</a>
-            <a href="https://www.linkedin.com/in/mayurpawar17" className="hover:text-primary">LinkedIn</a>
+          <div className="mt-8 flex justify-center gap-4 font-mono text-sm text-muted-foreground">
+            <a
+              href="https://github.com/mayurpawar17"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 px-4 py-2 transition hover:border-primary hover:text-primary"
+              aria-label="GitHub"
+            >
+              <Github className="size-4" />
+              <span>GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mayurpawar17"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 px-4 py-2 transition hover:border-primary hover:text-primary"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="size-4" />
+              <span>LinkedIn</span>
+            </a>
           </div>
         </div>
       </section>

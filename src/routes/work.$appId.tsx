@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { ArrowLeft } from "lucide-react";
 import { getProject } from "@/lib/projects";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -34,13 +35,20 @@ function AppDetail() {
     <div className="min-h-screen">
       <header className="sticky top-0 z-20 border-b border-border bg-background/80 backdrop-blur">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-          <Link to="/" className="font-mono text-sm font-medium">
-            Mayur Pawar
-          </Link>
+          <div>
+            <Link to="/" className="font-mono text-sm font-medium">
+              Mayur Pawar
+            </Link>
+          </div>
           <div className="flex items-center gap-3">
             <ThemeToggle />
-            <Link to="/" hash="work" className="rounded-full border border-border px-4 py-2 text-sm font-medium hover:bg-accent">
-              ← All work
+            <Link
+              to="/"
+              hash="work"
+              className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition-colors hover:border-primary hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+            >
+              <ArrowLeft aria-hidden="true" className="size-4" />
+              Back to projects
             </Link>
           </div>
         </nav>
@@ -78,7 +86,7 @@ function AppDetail() {
               {screenshots.length ? (
                 <img
                   src={screenshots[index % screenshots.length]}
-                  alt={`${p.title} screen preview ${index + 1}${index > 0 ? " (mock)" : ""}`}
+                  alt={`${p.title} screen preview ${index + 1}`}
                   width={860}
                   height={1920}
                   className="h-full w-full rounded-[inherit] object-cover object-top"
