@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Play } from "lucide-react";
 import { mobileProjects } from "@/lib/projects";
 import { ThemeToggle } from "@/components/theme-toggle";
 import companyLogo from "@/assets/kapil_it_solutions.png";
@@ -132,8 +132,9 @@ function Index() {
                     href={p.playStoreUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-5 rounded-full border border-border px-5 py-2 text-sm font-medium transition hover:border-primary hover:text-primary"
+                    className="mt-5 inline-flex items-center gap-2 rounded-full border border-border px-5 py-2 text-sm font-medium transition hover:border-primary hover:text-primary"
                   >
+                    <Play aria-hidden="true" className="size-4 fill-current" />
                     View on Play Store
                   </a>
                 )}

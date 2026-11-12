@@ -7,6 +7,10 @@ import dotoonSplashPage from "@/assets/dotoon/dotoonSplashPage.jpeg";
 import dotoonHomePage from "@/assets/dotoon/dotoonHomePage.jpeg";
 import dotoonEditPage from "@/assets/dotoon/dotoonEditPage.jpeg";
 import dotoonCalenderPage from "@/assets/dotoon/dotoonCalenderPage.jpeg";
+import memoryCreatePage from "@/assets/memory/memoryCreatePage.jpeg";
+import memoryHomePage from "@/assets/memory/memoryHomePage.jpeg";
+import memorySplashPage from "@/assets/memory/memorySplashPage.jpeg";
+import memoryTimelinePage from "@/assets/memory/memoryTimelinePage.jpeg";
 
 export type MobileProject = {
   slug: string;
@@ -33,9 +37,9 @@ export const mobileProjects: MobileProject[] = [
     desc: "BMI calculator with male/female profiles, metric & imperial units and a clean dark UI.",
     stack: ["Flutter", "Dart"],
     hue: "from-primary/70 to-accent",
-    shot: bmiShot,
-    screenshots: [bmiShot, bmiShot, bmiShot],
-    playStoreUrl: "https://play.google.com/store/search?q=BMI%20FitIndex%20Pro&c=apps",
+    shot: memorySplashPage,
+    screenshots: [memoryHomePage, memoryTimelinePage, memoryCreatePage],
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.devmayur.memoryticket",
     overview:
       "BMI FitIndex Pro is a fast, privacy-first body mass index calculator for Android. It supports male and female profiles, both metric and imperial units, and presents results with a clean, dark, glanceable interface.",
     features: [
@@ -77,6 +81,7 @@ export const mobileProjects: MobileProject[] = [
     hue: "from-chart-2/70 to-secondary",
     shot: dotoonSplashPage,
     screenshots: [dotoonHomePage, dotoonEditPage, dotoonCalenderPage],
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.devmayur.dotoon",
     overview:
       "Basket is a grocery delivery app focused on speed: one-tap reorders, a smart cart and live courier tracking on the map from store to doorstep.",
     features: [
@@ -89,23 +94,26 @@ export const mobileProjects: MobileProject[] = [
     year: "2023",
   },
   {
-    slug: "notely",
-    title: "Notely",
-    tag: "Productivity",
-    desc: "Markdown notes with end-to-end encrypted sync across devices.",
-    stack: ["Swift", "Kotlin", "Rust"],
-    hue: "from-chart-4/60 to-muted",
-    screen: ["Notes", "Sprint planning", "Reading list", "Ideas ✦"],
+    slug: "bmi-fitindex-pro-details",
+    title: "BMI FitIndex Pro",
+    tag: "Android · Flutter",
+    desc: "BMI calculator with male/female profiles, metric & imperial units and a clean dark UI.",
+    stack: ["Flutter", "Dart"],
+    hue: "from-primary/70 to-accent",
+    shot: bmiShot,
+    screenshots: [bmiShot],
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.devmayur.bmi_fitindex_pro",
     overview:
-      "Notely is a markdown-first notes app with end-to-end encrypted sync. Notes are encrypted on device before they ever touch the network, so only you can read them.",
+      "BMI FitIndex Pro is a fast, privacy-first body mass index calculator for Android. It supports male and female profiles, both metric and imperial units, and presents results with a clean, dark, glanceable interface.",
     features: [
-      "End-to-end encrypted sync across devices",
-      "Native iOS and Android apps with a shared Rust core",
-      "Full markdown support with live preview",
-      "Instant full-text search",
+      "Male & female profile support",
+      "Metric and imperial unit systems",
+      "Instant BMI calculation with category breakdown",
+      "Clean dark UI built with Flutter",
+      "Fully offline — no account, no data leaves the device",
     ],
-    role: "Founding engineer",
-    year: "2022",
+    role: "Design & development",
+    year: "2025",
   },
 ];
 
