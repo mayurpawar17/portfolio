@@ -20,7 +20,7 @@ export const Route = createFileRoute("/")({
 });
 
 const skills = {
-  Frontend: ["React", "Next.js", "TypeScript", "Tailwind"],
+  Frontend: ["React", "TypeScript", "Tailwind"],
   Backend: ["Python", "FastAPI", "REST APIs", "Pydantic", "SQLAlchemy"],
   Mobile: ["Flutter", "Dart", "BLoC", "Provider", "Clean Architecture"],
   "Data & Cloud": ["PostgreSQL", "Redis", "AWS", "Docker", "Kubernetes", "Git", "GitHub Actions"],
@@ -161,8 +161,15 @@ function Index() {
             {experience.map((e) => (
               <li key={e.role} className="flex flex-col justify-between gap-1 py-5 sm:flex-row sm:items-center">
                 <div className="flex items-center gap-3">
-                  <img src={companyLogo} alt={`${e.co} logo`} className="size-12 shrink-0 rounded-lg border border-border bg-white p-1 object-contain" />
-                  <div><p className="font-medium">{e.role}</p><p className="text-sm text-muted-foreground">{e.co}</p></div>
+                  <a href="https://kapilit.com/index.html" target="_blank" rel="noreferrer" aria-label={`${e.co} website`}>
+                    <img src={companyLogo} alt={`${e.co} logo`} className="size-12 shrink-0 rounded-lg border border-border bg-white p-1 object-contain" />
+                  </a>
+                  <div>
+                    <p className="font-medium">{e.role}</p>
+                    <a href="https://kapilit.com/index.html" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                      {e.co}
+                    </a>
+                  </div>
                 </div>
                 <span className="font-mono text-xs text-muted-foreground">{e.time}</span>
               </li>
@@ -179,8 +186,16 @@ function Index() {
             {education.map((e) => (
               <li key={e.degree} className="flex flex-col justify-between gap-1 py-5 sm:flex-row sm:items-center">
                 <div className="flex items-center gap-3">
-                  <img src={collegeLogo} alt={`${e.school} logo`} className="size-12 shrink-0 rounded-lg border border-border bg-white p-1 object-contain" />
-                  <div><p className="font-medium">{e.degree}</p><p className="text-sm text-muted-foreground">{e.school}</p><p className="mt-1 text-xs text-muted-foreground">{e.grade}</p></div>
+                  <a href="https://coeshahada.ac.in/" target="_blank" rel="noreferrer" aria-label="College website">
+                    <img src={collegeLogo} alt={`${e.school} logo`} className="size-12 shrink-0 rounded-lg border border-border bg-white p-1 object-contain" />
+                  </a>
+                  <div>
+                    <p className="font-medium">{e.degree}</p>
+                    <a href="https://coeshahada.ac.in/" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                      {e.school}
+                    </a>
+                    <p className="mt-1 text-xs text-muted-foreground">{e.grade}</p>
+                  </div>
                 </div>
                 <span className="font-mono text-xs text-muted-foreground">{e.time}</span>
               </li>
