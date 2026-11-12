@@ -1,4 +1,6 @@
-import bmiShot from "@/assets/bmi1.png";
+import bmiHomePage from "@/assets/bmi/bmiHomePage.jpeg";
+import bmiResultPage from "@/assets/bmi/bmiResultPage.jpeg";
+import bmiSplashPage from "@/assets/bmi/bmiSplashPage.jpeg";
 import vocabularHomePage from "@/assets/vocabular/vocabularHomePage.jpeg";
 import vocabularPracticePage from "@/assets/vocabular/vocabularPracticePage.jpeg";
 import vocabularSearchPage from "@/assets/vocabular/vocabularSearchPage.jpeg";
@@ -100,8 +102,8 @@ export const mobileProjects: MobileProject[] = [
     desc: "BMI calculator with male/female profiles, metric & imperial units and a clean dark UI.",
     stack: ["Flutter", "Dart"],
     hue: "from-primary/70 to-accent",
-    shot: bmiShot,
-    screenshots: [bmiShot],
+    shot: bmiSplashPage,
+    screenshots: [bmiHomePage, bmiResultPage],
     playStoreUrl: "https://play.google.com/store/apps/details?id=com.devmayur.bmi_fitindex_pro",
     overview:
       "BMI FitIndex Pro is a fast, privacy-first body mass index calculator for Android. It supports male and female profiles, both metric and imperial units, and presents results with a clean, dark, glanceable interface.",
