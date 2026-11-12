@@ -126,8 +126,8 @@ function AppDetail() {
             </ul>
           </div>
           <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-border pt-6 md:mt-0">
-            <div><dt className="font-mono text-xs text-muted-foreground">Role</dt><dd className="mt-1 font-medium">{p.role}</dd></div>
-            <div><dt className="font-mono text-xs text-muted-foreground">Year</dt><dd className="mt-1 font-medium">{p.year}</dd></div>
+            <div><dt className="font-mono text-xs text-muted-foreground">Platform</dt><dd className="mt-1 font-medium">{p.platform}</dd></div>
+            <div><dt className="font-mono text-xs text-muted-foreground">Storage</dt><dd className="mt-1 font-medium">{p.storage}</dd></div>
           </dl>
         </div>
       </section>
