@@ -3,6 +3,10 @@ import vocabularHomePage from "@/assets/vocabular/vocabularHomePage.jpeg";
 import vocabularPracticePage from "@/assets/vocabular/vocabularPracticePage.jpeg";
 import vocabularSearchPage from "@/assets/vocabular/vocabularSearchPage.jpeg";
 import vocabularSplashPage from "@/assets/vocabular/vocabularSplashPage.jpeg";
+import dotoonSplashPage from "@/assets/dotoon/dotoonSplashPage.jpeg";
+import dotoonHomePage from "@/assets/dotoon/dotoonHomePage.jpeg";
+import dotoonEditPage from "@/assets/dotoon/dotoonEditPage.jpeg";
+import dotoonCalenderPage from "@/assets/dotoon/dotoonCalenderPage.jpeg";
 
 export type MobileProject = {
   slug: string;
@@ -71,7 +75,8 @@ export const mobileProjects: MobileProject[] = [
     desc: "Ordering app with live courier tracking and one-tap reorder.",
     stack: ["Flutter", "Node", "Maps API"],
     hue: "from-chart-2/70 to-secondary",
-    screen: ["Your cart", "Avocados ×3", "Oat milk ×2", "Checkout ₹640"],
+    shot: dotoonSplashPage,
+    screenshots: [dotoonHomePage, dotoonEditPage, dotoonCalenderPage],
     overview:
       "Basket is a grocery delivery app focused on speed: one-tap reorders, a smart cart and live courier tracking on the map from store to doorstep.",
     features: [
